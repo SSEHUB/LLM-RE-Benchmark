@@ -1,0 +1,6 @@
+*.png
+*.pdf
+OllamaClient.py
+venv/
+__pycache__/
+OllamaModelsLocal.py

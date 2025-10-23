@@ -1,0 +1,139 @@
+Kategorie,Wert
+🔢 Anzahl analysierter Textsegmente,60
+📝 Gesamtanzahl Zeichen (original_text),19814
+📝 Gesamtanzahl Wörter (original_text),3255
+🧩 Gesamtanzahl Referenzen,115
+🧩 Gesamtanzahl Referenz-Wörter,1851
+📉 Gesamtanzahl Nicht-Referenz-Wörter,1404
+,
+📈 Durchschnittswerte pro Textsegment,
+➡️ Zeichen,330.23
+➡️ Wörter,54.25
+➡️ Referenzen,1.92
+➡️ Referenz-Wörter,30.85
+➡️ Nicht-Referenz-Wörter,23.4
+,
+📏 Min/Max-Werte,
+📏 Kürzester Text (Wörter),12
+📏 Längster Text (Wörter),122
+🔢 Wenigste Referenzen,1
+🔢 Meiste Referenzen,6
+✂️ Geringste Ref-Wörter,0
+✂️ Meiste Ref-Wörter,122
+,
+📐 Kategorisierung nach Textlänge (Wortanzahl),
+🗂️ Kategorie 0 (Wörter 0–9),0
+🗂️ Kategorie 1 (Wörter 10–19),2
+🗂️ Kategorie 2 (Wörter 20–29),5
+🗂️ Kategorie 3 (Wörter 30–39),11
+🗂️ Kategorie 4 (Wörter 40–49),11
+🗂️ Kategorie 5 (Wörter 50–59),11
+🗂️ Kategorie 6 (Wörter 60–69),6
+🗂️ Kategorie 7 (Wörter 70–79),6
+🗂️ Kategorie 8 (Wörter 80–89),4
+🗂️ Kategorie 9 (Wörter 90–99),1
+🗂️ Kategorie 10 (Wörter ≥100),3
+,
+📊 Gruppierte Durchschnittswerte,
+,
+📘 Gruppe 1 – Gesamtsummen,
+Anzahl Textsegmente,20
+Zeichen gesamt,7808
+Wörter gesamt,1334
+Referenzen gesamt,43
+Referenz-Wörter gesamt,735
+Nicht-Referenz-Wörter,599
+📘 Gruppe 1 – Durchschnittswerte,
+Ø Zeichen,390.4
+Ø Wörter,66.7
+Ø Referenzen,2.15
+Ø Ref-Wörter,36.75
+Ø NonRef-Wörter,29.95
+Ø Ref/Total,55.05%
+Ø NonRef/Total,44.95%
+📘 Gruppe 1 – Min/Max,
+Kürzester Text (Wörter),34
+Längster Text (Wörter),117
+Min Referenzen,1
+Max Referenzen,5
+Min Ref-Wörter,9
+Max Ref-Wörter,68
+🗂️ Gruppe 1 – Kategorie 0 (Wörter 0–9),0
+🗂️ Gruppe 1 – Kategorie 1 (Wörter 10–19),0
+🗂️ Gruppe 1 – Kategorie 2 (Wörter 20–29),0
+🗂️ Gruppe 1 – Kategorie 3 (Wörter 30–39),2
+🗂️ Gruppe 1 – Kategorie 4 (Wörter 40–49),3
+🗂️ Gruppe 1 – Kategorie 5 (Wörter 50–59),3
+🗂️ Gruppe 1 – Kategorie 6 (Wörter 60–69),4
+🗂️ Gruppe 1 – Kategorie 7 (Wörter 70–79),3
+🗂️ Gruppe 1 – Kategorie 8 (Wörter 80–89),2
+🗂️ Gruppe 1 – Kategorie 9 (Wörter 90–99),1
+🗂️ Gruppe 1 – Kategorie 10 (Wörter ≥100),2
+,
+📘 Gruppe 2 – Gesamtsummen,
+Anzahl Textsegmente,20
+Zeichen gesamt,6641
+Wörter gesamt,1116
+Referenzen gesamt,52
+Referenz-Wörter gesamt,1116
+Nicht-Referenz-Wörter,0
+📘 Gruppe 2 – Durchschnittswerte,
+Ø Zeichen,332.05
+Ø Wörter,55.8
+Ø Referenzen,2.6
+Ø Ref-Wörter,55.8
+Ø NonRef-Wörter,0.0
+Ø Ref/Total,100.00%
+Ø NonRef/Total,0.00%
+📘 Gruppe 2 – Min/Max,
+Kürzester Text (Wörter),26
+Längster Text (Wörter),122
+Min Referenzen,1
+Max Referenzen,6
+Min Ref-Wörter,26
+Max Ref-Wörter,122
+🗂️ Gruppe 2 – Kategorie 0 (Wörter 0–9),0
+🗂️ Gruppe 2 – Kategorie 1 (Wörter 10–19),0
+🗂️ Gruppe 2 – Kategorie 2 (Wörter 20–29),2
+🗂️ Gruppe 2 – Kategorie 3 (Wörter 30–39),4
+🗂️ Gruppe 2 – Kategorie 4 (Wörter 40–49),2
+🗂️ Gruppe 2 – Kategorie 5 (Wörter 50–59),6
+🗂️ Gruppe 2 – Kategorie 6 (Wörter 60–69),1
+🗂️ Gruppe 2 – Kategorie 7 (Wörter 70–79),2
+🗂️ Gruppe 2 – Kategorie 8 (Wörter 80–89),2
+🗂️ Gruppe 2 – Kategorie 9 (Wörter 90–99),0
+🗂️ Gruppe 2 – Kategorie 10 (Wörter ≥100),1
+,
+📘 Gruppe 3 – Gesamtsummen,
+Anzahl Textsegmente,20
+Zeichen gesamt,5365
+Wörter gesamt,805
+Referenzen gesamt,20
+Referenz-Wörter gesamt,0
+Nicht-Referenz-Wörter,805
+📘 Gruppe 3 – Durchschnittswerte,
+Ø Zeichen,268.25
+Ø Wörter,40.25
+Ø Referenzen,1.0
+Ø Ref-Wörter,0.0
+Ø NonRef-Wörter,40.25
+Ø Ref/Total,0.00%
+Ø NonRef/Total,100.00%
+📘 Gruppe 3 – Min/Max,
+Kürzester Text (Wörter),12
+Längster Text (Wörter),71
+Min Referenzen,1
+Max Referenzen,1
+Min Ref-Wörter,0
+Max Ref-Wörter,0
+🗂️ Gruppe 3 – Kategorie 0 (Wörter 0–9),0
+🗂️ Gruppe 3 – Kategorie 1 (Wörter 10–19),2
+🗂️ Gruppe 3 – Kategorie 2 (Wörter 20–29),3
+🗂️ Gruppe 3 – Kategorie 3 (Wörter 30–39),5
+🗂️ Gruppe 3 – Kategorie 4 (Wörter 40–49),6
+🗂️ Gruppe 3 – Kategorie 5 (Wörter 50–59),2
+🗂️ Gruppe 3 – Kategorie 6 (Wörter 60–69),1
+🗂️ Gruppe 3 – Kategorie 7 (Wörter 70–79),1
+🗂️ Gruppe 3 – Kategorie 8 (Wörter 80–89),0
+🗂️ Gruppe 3 – Kategorie 9 (Wörter 90–99),0
+🗂️ Gruppe 3 – Kategorie 10 (Wörter ≥100),0

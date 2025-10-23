@@ -1,0 +1,1698 @@
+[
+    {
+      "text_id": "1", 
+      "text_number": 1,
+      "source": "2009 - video search",
+      "pages": "3",
+      "original_text": "There will be two levels of user for our system. The first will be the general user that will be using our software to find their videos. They will only see the front end of the system. The second level will be the system developers. They will be able to edit which sites the system will search, depending on whether they think the site is safe, compatible with our software, the speed at which the site can be searched, and how useful the site is to us, i.e. how many results have come back from that site.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The first will be the general user that will be using our software to find their videos.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "They will only see the front end of the system.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "They will be able to edit which sites the system will search.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "2", 
+      "text_number": 2,
+      "source": "2009 - video search",
+      "pages": "4",
+      "original_text": "The user will give a search-term that will search through a database of compatible torrent websites that are added by the development team. The results of this search will be displayed as web links in a tab on the programs main window. This is one of the main features of the software and therefore has a high priority for development.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The user will give a search-term that will search through a database of compatible torrent websites that are added by the development team.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The results of this search will be displayed as web links in a tab on the programs main window.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "3", 
+      "text_number": 3,
+      "source": "2009 - video search",
+      "pages": "4",
+      "original_text": "This feature will search a term the user enters, through a database of compatible video streaming websites that are added by the development team. The video websites will range from sites that actually host video such as MegaVideo, YouTube, etc as well as websites that show links to videos hosted on other sites such as surfthechannel.com, alluc.org, etc. The results will be displayed in a tab on the programs main window. This tab will be split horizontally into two sections, the top half for the video hosting sites and the bottom half for the video link sites. This is another of the main features of the software and also has a higher priority for development.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "This feature will search a term the user enters, through a database of compatible video streaming websites that are added by the development team.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The results will be displayed in a tab on the programs main window.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This tab will be split horizontally into two sections, the top half for the video hosting sites and the bottom half for the video link sites.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "4", 
+      "text_number": 4,
+      "source": "2005 - phin ",
+      "pages": "5",
+      "original_text": "Systems supporting OM must have the capability to capture data about any animals involved in an OM investigation, including: type (dog, monkey, etc), age, gender, owners name and address, color, weight, and species. A Subject ID should also be collected for animals in an OM investigation. It may be a challenge to ensure unambiguous identification because demographic details of an animal are not easily identified; therefore, animals involved in investigations may need to be tagged.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "Systems supporting OM must have the capability to capture data about any animals involved in an OM investigation, including: type (dog, monkey, etc), age, gender, owners name and address, color, weight, and species.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A Subject ID should also be collected for animals in an OM investigation.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "5", 
+      "text_number": 5,
+      "source": "2005 - microcare",
+      "pages": "3",
+      "original_text": "The system will be user friendly with maximum master table structure with all transaction screens to have drop down selection menus to minimize data entry errors. The main data entry screen on claims entry to have drop drown menu from patients profile selection to medicine cost to have drop down. Minimize the use of key board for any number entry to have a faster transaction data entry. The system will be easily trainable for the user with minimum computer skill with simple user step by step manual.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "all transaction screens to have drop down selection menus",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The main data entry screen on claims entry to have drop drown menu from patients profile selection to medicine cost to have drop down. ",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "6", 
+      "text_number": 6,
+      "source": "2005 - microcare",
+      "pages": "21",
+      "original_text": "Before the claim entry the user should check the form manually to understand whether any mandatory information is missed in the Claim or not. If yes, then the user should mark that Claim (Treatment Form) status as Rejected and send back to VSP. During the claim entry the system should capture the following information:",
+      "numberOfRequirements": 2,
+      "requirements": [
+
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If yes, then the user should mark that Claim (Treatment Form) status as Rejected and send back to VSP.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "During the claim entry the system should capture the following information:",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },   
+    {
+      "text_id": "7", 
+      "text_number": 7,
+      "source": "2005 - microcare",
+      "pages": "20",
+      "original_text": "Depends on the payment terms (Bi-monthly / Monthly) mentioned in the VSP master the VSP should submit the Claim (Treatment form) to the MISU Field office. While submitting the Claim (Treatment Form) to MSIU, the system will have the provision to capture the following details:",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "While submitting the Claim (Treatment Form) to MSIU, the system will have the provision to capture the following details:",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },   
+    {
+      "text_id": "8", 
+      "text_number": 8,
+      "source": "2005 - microcare",
+      "pages": "3",
+      "original_text": "The voucher management system VMS is designed to atomize the process of Voucher Management Unit (VMU) to minimize the manual process to maximize the quality of the project to understand the progress and timely out come of the project to take necessary steps by the MSIU Admin team to plan for the future and to increase the quality of the STD voucher service. The system will also control the existence of fraud in claims and will help the service provider to reach their payments in time without delay. The other features and details of system will be explained in below sections in the document.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system will also control the existence of fraud in claims and will help the service provider to reach their payments in time without delay.",
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "9", 
+      "text_number": 9,
+      "source": "2005 - microcare",
+      "pages": "14",
+      "original_text": "The system will capture the details of MSIU Salesman; this would help the MSIU management team to understand the performance of each Team or salesman. During every distribution transaction the user should select the name of the sales man listed from Team Master.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system will capture the details of MSIU Salesman.",
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "10", 
+      "text_number": 10,
+      "source": "2000 - nasa x38 ",
+      "pages": "7",
+      "original_text": "System Initialization is entered when the system is powered up for the first time, or when a power-on reset exception is received by the software. Section 3.2.1 gives the requirements for this state. The system transfers to the Normal Operation state after the FCP has been configured into a fault-tolerant computer and enables the timer interrupt.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "System Initialization is entered when the system is powered up for the first time, or when a power-on reset exception is received by the software.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system transfers to the Normal Operation state after the FCP has been configured into a fault-tolerant computer and enables the timer interrupt.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "11", 
+      "text_number": 11,
+      "source": "2008 - keepass",
+      "pages": "12",
+      "original_text": "There is the ability to search in the database for usernames, groups, passwords, URLs, notes and titles. This is very useful when the user needs to find out very quickly which password is required in one account or what username he has put on another account. It is not necessary to write in the search field all characters. By writing just one character the database will present all data which contains it or are related with it.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "There is the ability to search in the database for usernames, groups, passwords, URLs, notes and titles.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "It is not necessary to write in the search field all characters.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "By writing just one character the database will present all data which contains it or are related with it.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "12", 
+      "text_number": 12,
+      "source": "2008 - keepass",
+      "pages": "24",
+      "original_text": "The password generator creates random passwords every time an entry is created. This password may contain letters (big and small) and numbers. The user can keep it or he can put his own in the field. The generation can be based on character sets, patterns or can be created according by rules. This feature can be disabled if user wants it by selecting 0 as password length in the password generator dialog. More about characters sets and patterns can be found at KeePass Help Files including directions and examples.",
+      "numberOfRequirements": 5,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The password generator creates random passwords every time an entry is created.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "This password may contain letters (big and small) and numbers.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The user can keep it or he can put his own in the field.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The generation can be based on character sets, patterns or can be created according by rules.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_5",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This feature can be disabled by selecting 0 as password length in the password generator dialog.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "13", 
+      "text_number": 13,
+      "source": "0000 - cctns",
+      "pages": "5",
+      "original_text": "The Citizen Interface module of the CCTNS acts as a conduit for the information exchange between citizens and police units/personnel. Citizens can use it as a tool to get information or acknowledgements from police. The police in turn can use it to respond to citizens with very little turnaround time. It improves overall productivity by helping citizens and police to cut short the drudgery of large amounts of paperwork.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The Citizen Interface module of the CCTNS acts as a conduit for the information exchange between citizens and police units/personnel.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Citizens can use it to get information or acknowledgements from police.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The police in turn can use it to respond to citizens.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "14", 
+      "text_number": 14,
+      "source": "2005 - microcare",
+      "pages": "12",
+      "original_text": "The system will capture the master details of every distributor so that the users can get the details of any distributor and sales details at any time. Each distributor will have unique code and detailed descriptions such as name, address, locations and type of business etc. such valid information will help us track information related to sales and distributions. Following fields will be captured at this master.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system will capture the master details of every distributor so that the users can get the details of any distributor and sales details at any time.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Each distributor will have unique code and detailed descriptions such as name, address, locations and type of business etc.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "15", 
+      "text_number": 15,
+      "source": "2005 - microcare",
+      "pages": "13",
+      "original_text": "The system will check the duplicated ID for the distributors. The system can allow the duplicate names of the Distributor. On capture of any duplicate name the system will give a warning message to have the duplicate name or to change the name. For better reporting purposes it is better to have a differentiating indicator on the name.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system will check the duplicated ID for the distributors.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system can allow the duplicate names of the Distributor.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "On capture of any duplicate name the system will give a warning message to have the duplicate name or to change the name.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "16", 
+      "text_number": 16,
+      "source": "0000 - gamma j",
+      "pages": "7",
+      "original_text": "Customers will be able to create accounts to store their profiles, contact information, purchase history, and confirm orders. This is a high priority system feature. Security methods will ensure that customer accounts remain confidential and resistant to tampering.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "Customers will be able to create accounts to store their profiles, contact information, purchase history, and confirm orders.",
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "17", 
+      "text_number": 17,
+      "source": "0000 - gamma j",
+      "pages": "8",
+      "original_text": "The system will feature an API to allow customers to build custom plug-ins to be able to meet their needs. This is a high priority system feature as it ensures the flexibility of the system to be tailored to specific needs.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system will feature an API to allow customers to build custom plug-ins to be able to meet their needs.",
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "18", 
+      "text_number": 18,
+      "source": "0000 - gamma j",
+      "pages": "8",
+      "original_text": "The interface will be presented to the customer in a web browser. The interface must remain consistent among various web browsers and be intuitive to the customer. This is a medium priority system feature.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The interface will be presented to the customer in a web browser. ",
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "19", 
+      "text_number": 19,
+      "source": "1998 - themas",
+      "pages": "2",
+      "original_text": "The system reports function receives event data from the THEMAS system. This function is a database that stores all the events in the THEMAS system. This function is mainly for the use of the supervisor of the THEMAS system to maintain an efficient heating and cooling system. The only process that interacts with the system reports function is the generate event data process.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system reports function receives event data from the THEMAS system.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This function is a database that stores all the events in the THEMAS system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The only process that interacts with the system reports function is the generate event data process.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "20", 
+      "text_number": 20,
+      "source": "1998 - themas",
+      "pages": "3",
+      "original_text": "The THEMAS system shall control the heating and cooling units that are defined as part of the THEMAS system. The definitions of the individual heating and cooling systems reside in an initialization file. The system shall read this file and the definitions shall be derived from the initialization data in the file.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The THEMAS system shall control the heating and cooling units that are defined as part of the THEMAS system.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall read this file and the definitions shall be derived from the initialization data in the file.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "21", 
+      "text_number": 21,
+      "source": "0000 - gamma j",
+      "pages": "7",
+      "original_text": "Customers will be able to create accounts to store their customer profiles, configure contact information, view their purchase history, and confirm orders. Customers will be able to register, log in, and log out of their accounts. Furthermore, Customer profiles will also include payment information, such as the ability to store credit card information, and address information.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "Customers will be able to create accounts to store their customer profiles, configure contact information, view their purchase history, and confirm orders.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Customers will be able to register, log in, and log out of their accounts.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Furthermore, Customer profiles will also include payment information, such as the ability to store credit card information, and address information.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "22", 
+      "text_number": 22,
+      "source": "0000 - gamma j",
+      "pages": "7",
+      "original_text": "Products will be stored in multi-tiered categories; a category can contain sub categories or products. The inventory management will allow for administrators to update the categories, the products placed in categories, and the specific product details.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "Products will be stored in multi-tiered categories; a category can contain sub categories or products.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The inventory management will allow for administrators to update the categories, the products placed in categories, and the specific product details.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "23", 
+      "text_number": 23,
+      "source": "0000 - gamma j",
+      "pages": "8",
+      "original_text": "Customers will also be able to add products into the shopping cart. The shopping cart will clearly display the number of items in the cart, along with the total cost. The customer will also be able to add to or remove products from the shopping cart prior to checkout and order confirmation.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "Customers will also be able to add products into the shopping cart.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The shopping cart will clearly display the number of items in the cart, along with the total cost.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The customer will also be able to add to or remove products from the shopping cart prior to checkout and order confirmation.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "24", 
+      "text_number": 24,
+      "source": "0000 - gamma j",
+      "pages": "8",
+      "original_text": "Customers will be able to confirm the order after checkout. If the order is incorrect, the customer will be able to revise and update their order. The customer will then receive a confirmation email with the specific order details.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "Customers will be able to confirm the order after checkout.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the order is incorrect, the customer will be able to revise and update their order.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The customer will then receive a confirmation email with the specific order details.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "25", 
+      "text_number": 25,
+      "source": "1998 - themas",
+      "pages": "15",
+      "original_text": "A current temperature value that is received from an individual thermostat shall be compared to the valid temperature range values. If the current temperature value is strictly less than the lower value of the valid temperature range or if the received temperature value is strictly greater than the upper value of the valid temperature range, then the THEMAS system shall identify the current temperature value as an invalid temperature and shall output an invalid temperature status. Otherwise, the THEMAS system shall output a valid temperature status.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "A current temperature value that is received from an individual thermostat shall be compared to the valid temperature range values.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the current temperature value is strictly less than the lower value of the valid temperature range or if the received temperature value is strictly greater than the upper value of the valid temperature range, then the THEMAS system shall identify the current temperature value as an invalid temperature and shall output an invalid temperature status.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Otherwise, the THEMAS system shall output a valid temperature status.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "26", 
+      "text_number": 26,
+      "source": "1998 - themas",
+      "pages": "17",
+      "original_text": "When a request to turn on a heating or cooling unit is received, the system shall determine if the request can be honored. If the maximum number of heating or cooling units is already running, the request will be added to a LIFO queue. If the maximum number of heating or cooling units is not running, this process will generate a request to turn on the requested unit.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "When a request to turn on a heating or cooling unit is received, the system shall determine if the request can be honored.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the maximum number of heating or cooling units is already running, the request will be added to a LIFO queue.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the maximum number of heating or cooling units is not running, this process will generate a request to turn on the requested unit.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "27", 
+      "text_number": 27,
+      "source": "1998 - themas",
+      "pages": "18",
+      "original_text": "When a request to turn on or off a heating or cooling unit is made, this process shall generate the appropriate request to carry out that request. This request shall include the designation of the heating or cooling unit and a flag to indicate whether that unit is to be turned on or off.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "When a request to turn on or off a heating or cooling unit is made, this process shall generate the appropriate request to carry out that request.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This request shall include the designation of the heating or cooling unit and a flag to indicate whether that unit is to be turned on or off.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "28", 
+      "text_number": 28,
+      "source": "2008 - keepass",
+      "pages": "18",
+      "original_text": "The user can modify the context of an entry he already has added. This can be done by selecting view/edit entry. In order for that to happen, the user must select an entry first. When he does this, the form he filled in when he created or last modified the entry open. Then the user can change the group, title, user name, password, URL, notes, expiration date and attachment file. His changes are saved by clicking OK.",
+      "numberOfRequirements": 6,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The user can modify the context of an entry he already has added.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This can be done by selecting view/edit entry.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "In order for that to happen, the user must select an entry first.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "When he does this, the form he filled in when he created or last modified the entry open.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_5",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Then the user can change the group, title, user name, password, URL, notes, expiration date and attachment file.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_6",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "His changes are saved by clicking OK.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "29", 
+      "text_number": 29,
+      "source": "2008 - keepass",
+      "pages": "19",
+      "original_text": "The user can delete an existing entry by selecting it and then by clicking delete entry. When this is done a message appears and informs the user that if he deletes the entry he will not be able to restore it back.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The user can delete an existing entry by selecting it and then by clicking delete entry.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "When this is done a message appears and informs the user that if he deletes the entry he will not be able to restore it back.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "30", 
+      "text_number": 30,
+      "source": "2009 - video search",
+      "pages": "4",
+      "original_text": "User enters search term and starts search – system sends queries to the torrent websites in its database based on the search term. Results for this query will then be sent to the torrent tab in the program where they will display information such as website, seeds, peers, size, date posted and a link for the webpage.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "User enters search term and starts search – system sends queries to the torrent websites in its database based on the search term.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Results for this query will then be sent to the torrent tab in the program where they will display information such as website, seeds, peers, size, date posted and a link for the webpage.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },    
+    {
+      "text_id": "31", 
+      "text_number": 31,
+      "source": "2009 - video search",
+      "pages": "4",
+      "original_text": "User sorts the search results by clicking once on a column header – system sorts all results by descending/ascending order. User clicks on next page button – system displays the next set of results for the search.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "User sorts the search results by clicking once on a column header – system sorts all results by descending/ascending order.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "User clicks on next page button – system displays the next set of results for the search.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },    
+    {
+      "text_id": "32", 
+      "text_number": 32,
+      "source": "2009 - library",
+      "pages": "8",
+      "original_text": "System provides a single console with access to all configuration files. Read and write permission to individual configuration files can be assigned to users and groups.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "System provides a single console with access to all configuration files.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Read and write permission to individual configuration files can be assigned to users and groups.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },    
+    {
+      "text_id": "33", 
+      "text_number": 33,
+      "source": "2009 - library",
+      "pages": "10",
+      "original_text": "System allows creation and modification of loan rules that allow or disallow check-out of items, calculate loan periods, and determine renewal limits. Loan rules may evaluate patron type, current number of items checked out, current patron account balance, item type, item status, owning location code, check-out location code, and other criteria. For example, loan rules may prohibit patrons from checking out items with an unavailable status, e.g. an item with a triggered hold for another patron or an item that is already checked out to another patron. Loan rules can access check-out location open/closed schedule in calculating due date. Loan rules also specify whether a specific criteria may be overridden by staff with specific privileges or roles.",
+      "numberOfRequirements": 4,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "System allows creation and modification of loan rules that allow or disallow check-out of items, calculate loan periods, and determine renewal limits.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Loan rules may evaluate patron type, current number of items checked out, current patron account balance, item type, item status, owning location code, check-out location code, and other criteria.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "For example, loan rules may prohibit patrons from checking out items with an unavailable status, e.g. an item with a triggered hold for another patron or an item that is already checked out to another patron.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Loan rules can access check-out location open/closed schedule in calculating due date. Loan rules also specify whether a specific criteria may be overridden by staff with specific privileges or roles.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },    
+    {
+      "text_id": "34", 
+      "text_number": 34,
+      "source": "2005 - microcare",
+      "pages": "17",
+      "original_text": "The system should generate message with two option 'Continue – Yes/No' while the user trying to create a new VSP with an existing name. If the user press Yes the system will allow the user to enter the same, if not the system wont allow the new entry to save.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system should generate message with two option 'Continue – Yes/No' while the user trying to create a new VSP with an existing name.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the user press Yes the system will allow the user to enter the same, if not the system wont allow the new entry to save.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },    
+    {
+      "text_id": "35", 
+      "text_number": 35,
+      "source": "2005 - microcare",
+      "pages": "25",
+      "original_text": "The system captures the thump impression available in each claim form, and needs to compare it with the same voucher numbers previous visits if available. If the thump impression are mismatching for the same patient (Client / Partner) on same voucher the system would automatically make a count on it. If the claim from same VSP having more than two times of Thump Impression mismatching, then the system should automatically produce a warning message and the same time the system should In-Activate the VSP.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The system captures the thump impression available in each claim form, and needs to compare it with the same voucher numbers previous visits if available.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the thump impression are mismatching for the same patient (Client / Partner) on same voucher the system would automatically make a count on it.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the claim from same VSP having more than two times of Thump Impression mismatching, then the system should automatically produce a warning message and the same time the system should In-Activate the VSP.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },    
+    {
+      "text_id": "36", 
+      "text_number": 36,
+      "source": "2009 - library",
+      "pages": "15",
+      "original_text": "System administrators can create report templates that are available to front-line staff, and can be run as is or modified to the staff person's particular needs.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "System administrators can create report templates that are available to front-line staff, and can be run as is or modified to the staff person's particular needs.",
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },    
+    {
+      "text_id": "37", 
+      "text_number": 37,
+      "source": "2010 - blit draft",
+      "pages": "7",
+      "original_text": "The User shall be able to view the hyperlinks and descriptions listed. The User shall be able to choose a function by clicking the hyperlink. The system shall display the desired operational page for the user after clicking the hyperlink.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The User shall be able to view the hyperlinks and descriptions listed.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The User shall be able to choose a function by clicking the hyperlink.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall display the desired operational page for the user after clicking the hyperlink.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "38", 
+      "text_number": 38,
+      "source": "2007 - ertms",
+      "pages": "25",
+      "original_text": "Transferring to Full Supervision shall occur automatically when a movement authority and all other necessary information is received through track-to-train transmission. It shall be possible for the trackside to ask a driver for confirmation about the occupancy of the track ahead before sending a Full Supervision movement authority.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "Transferring to Full Supervision shall occur automatically when a movement authority and all other necessary information is received through track-to-train transmission.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "It shall be possible for the trackside to ask a driver for confirmation about the occupancy of the track ahead before sending a Full Supervision movement authority.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "39", 
+      "text_number": 39,
+      "source": "2007 - ertms",
+      "pages": "14",
+      "original_text": "If, as a result of an automatic transition, except for transitions to and from National Operation (STM), the responsibility for the driver increases, the ETCS shall seek an acknowledgement from the driver, whether the train is stationary or not.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "If, as a result of an automatic transition, except for transitions to and from National Operation (STM), the responsibility for the driver increases, the ETCS shall seek an acknowledgement from the driver, whether the train is stationary or not.",
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "40", 
+      "text_number": 40,
+      "source": "2007 - ertms",
+      "pages": "31",
+      "original_text": "The ETCS trainborne equipment shall supervise the end of movement authority, if this information is available on-board. The target distance to be displayed on the DMI shall be based on the most restrictive braking curve. Together with the movement authority, the on board shall be able to receive one or more time-out(s) for certain sections of the movement authority, and shorten the movement authority accordingly when a time out expires.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": "The ETCS trainborne equipment shall supervise the end of movement authority, if this information is available on-board.",
+          "alternatives": [
+            null,
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The target distance to be displayed on the DMI shall be based on the most restrictive braking curve.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Together with the movement authority, the on board shall be able to receive one or more time-out(s) for certain sections of the movement authority, and shorten the movement authority accordingly when a time out expires.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "41", 
+      "text_number": 41,
+      "source": "1995 - gemini",
+      "pages": "40",
+      "original_text": "Effectiveness should be evaluated in terms of cost, space requirements, longevity, and speed. This shall lead to the definition of a Gemini 8m Telescopes standard, used on all instruments. In general, operational overheads must be kept as low as possible, to maximize actual observing times.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "42", 
+      "text_number": 42,
+      "source": "2009 - library",
+      "pages": "5",
+      "original_text": "System documentation is library-specific and follows standard formats for technical documentation. Documentation is specific to the particular version of the software in use at library. Documentation is web-based, indexed, organized by function, and easily searchable.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "43", 
+      "text_number": 43,
+      "source": "1995 - gemini",
+      "pages": "58",
+      "original_text": "Quantitative maintenance requirements will be allocated to the system, subsystems, and each component. The requirements must be achievable and stated in such a way that verification is permitted. The requirements will be expressed as: A: Mean Time to Repair for each maintenance level. B: Maximum Time to Repair for each maintenance level. C: Preventative Maintenance hours per year.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "44", 
+      "text_number": 44,
+      "source": "1995 - gemini",
+      "pages": "58",
+      "original_text": "All Gemini Software must be designed with human engineering requirements under consideration.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "45", 
+      "text_number": 45,
+      "source": "0000 - cctns",
+      "pages": "3",
+      "original_text": "CCTNS V1.0 functionality is designed to focus on delivering value to IOs, records room staff and citizens within the broad crime investigation area. Based on the guiding principles stated above, nine different function blocks have been identified and the detailed functionality of each block was determined.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "46", 
+      "text_number": 46,
+      "source": "2009 - library",
+      "pages": "3",
+      "original_text": "1.8 User Documentation UD-1: The software developer shall provide complete data specifications for authority records, bibliographic records, order records, item records, hold/request records, and other records maintained or accessed by the System Administration Module. UD-2: The software developer shall provide a thorough high-level description of major processes, including bibliographic record import and export, validation of bibliographic records against internal and external authority sources, and standard reports.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "47", 
+      "text_number": 47,
+      "source": "0000 - cctns",
+      "pages": "10",
+      "original_text": "Making navigation self-descriptive: Navigation should be designed to help users understand where they are, where they have been and where they can go next. General guidance on achieving self-descriptiveness is given in ISO 9241-110.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "48", 
+      "text_number": 48,
+      "source": "0000 - cctns",
+      "pages": "11",
+      "original_text": "Text quality: The quality of textual content with respect to spelling and grammar should be sufficient so as not to impede readability.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "49", 
+      "text_number": 49,
+      "source": "2005 - microcare",
+      "pages": "9",
+      "original_text": "This section of the document is going to explain the functionalities of the system, its subsystems and how it is integrated and working together. During the system study, it was understood that the first pilot period, twenty thousand vouchers will be sold, but the VMU-system has the provision to upgrade to meet the additional market and projects needs.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "50", 
+      "text_number": 50,
+      "source": "2005 - microcare",
+      "pages": "14",
+      "original_text": "The sales team master is for the future development of this program, if this program is extended to a country-wide network, this master will help understand and tack sales information.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "51", 
+      "text_number": 51,
+      "source": "2007 - eirene fun 7",
+      "pages": "13",
+      "original_text": "The EIRENE Functional Requirements Specification defines the requirements of a radio system satisfying the mobile communications needs of the European railways1. It encompasses ground-train voice and data communications, together with the groundbased mobile communications needs of trackside workers, station and depot staff and railway administrative and managerial personnel.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "52", 
+      "text_number": 52,
+      "source": "2007 - eirene fun 7",
+      "pages": "13",
+      "original_text": "The scope of this specification is to provide interoperability for trains and staff crossing national or other borders between systems, and to provide manufacturing economies of scale wherever practical.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "53", 
+      "text_number": 53,
+      "source": "2007 - eirene fun 7",
+      "pages": "23",
+      "original_text": "It may be necessary to supplement this Functional Requirements Specification with special requirements for supporting the train control application. Further information on the communications requirements to support ERTMS can be found in the Summary of ERTMS Communication Requirements document. ",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "54", 
+      "text_number": 54,
+      "source": "0000 - gamma j",
+      "pages": "6",
+      "original_text": "CO-2: Compatibility is only tested and verified for Microsoft Internet Explorer version 6 and 7, Netscape Communicator Version 4 and 5. Other versions may not be 100% compatible. Also other browsers such as Mozilla or Firefox may not be 100% compatible.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "55", 
+      "text_number": 55,
+      "source": "2009 - library",
+      "pages": "21",
+      "original_text": "1.4 Document Conventions   The SRS includes requirements. Requirements include a reference to a process flowchart where appropriate. Flowcharts generally indicate the current approach to System Administration at King County Library System, and should be considered to give contextual information rather than to prescribe or constrain new software development.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "56", 
+      "text_number": 56,
+      "source": "0000 - gamma j",
+      "pages": "22",
+      "original_text": "The system shall be easy to use. The system shall be easy to learn.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "57", 
+      "text_number": 57,
+      "source": "2005 - phin",
+      "pages": "16",
+      "original_text": "Privacy requirements ensure that sensitive information is not accessibly to unauthorized uses. Privacy requirements are broadly defined because they span all PHIN functional areas. These requirements should be reviewed in PHIN Preparedness Cross Functional Components Requirements, available at www.cdc.gov/phin",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "58", 
+      "text_number": 58,
+      "source": "2009 - video search",
+      "pages": "8",
+      "original_text": "Our development team must thoroughly investigate each website within our database each month, to ensure that no illegal or harmful content is exposed to our users.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "59", 
+      "text_number": 59,
+      "source": "2009 - video search",
+      "pages": "8",
+      "original_text": "5.4 Legal Requirements  While all safety measures resulting from the site may not be fully identified, a recommendation of a full legal review of the software should be undertaken before the site is available to the public. In doing so, the site will be subject to full indemnification of liability. The system we produce will stay within all the legal requirements on our behalf.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "60", 
+      "text_number": 60,
+      "source": "2009 - video search",
+      "pages": "7",
+      "original_text": "It will give the software more flexibility and allows for easy and simple usage. This will appeal to both naive computer users and experienced computer users with a higher selling market.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional", 
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  ]
