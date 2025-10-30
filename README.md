@@ -1,4 +1,4 @@
-# LLM-RE-Benchmark: Can LLMs identify funktional requirements information?
+# LLM-RE-Benchmark: Can LLMs identify functional requirements information?
 
 A benchmark for evaluating LLMs regarding their ability to recognize and extract functional requirement information in natural language texts.
 
