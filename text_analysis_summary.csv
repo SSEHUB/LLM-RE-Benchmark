@@ -1,139 +1,139 @@
 Kategorie,Wert
-🔢 Anzahl analysierter Textsegmente,60
-📝 Gesamtanzahl Zeichen (original_text),19814
-📝 Gesamtanzahl Wörter (original_text),3255
-🧩 Gesamtanzahl Referenzen,115
-🧩 Gesamtanzahl Referenz-Wörter,1851
-📉 Gesamtanzahl Nicht-Referenz-Wörter,1404
+🔢 Anzahl analysierter Textsegmente,120
+📝 Gesamtanzahl Zeichen (original_text),44575
+📝 Gesamtanzahl Wörter (original_text),7348
+🧩 Gesamtanzahl Referenzen,250
+🧩 Gesamtanzahl Referenz-Wörter,3962
+📉 Gesamtanzahl Nicht-Referenz-Wörter,3386
 ,
 📈 Durchschnittswerte pro Textsegment,
-➡️ Zeichen,330.23
-➡️ Wörter,54.25
-➡️ Referenzen,1.92
-➡️ Referenz-Wörter,30.85
-➡️ Nicht-Referenz-Wörter,23.4
+➡️ Zeichen,371.46
+➡️ Wörter,61.23
+➡️ Referenzen,2.08
+➡️ Referenz-Wörter,33.02
+➡️ Nicht-Referenz-Wörter,28.22
 ,
 📏 Min/Max-Werte,
 📏 Kürzester Text (Wörter),12
-📏 Längster Text (Wörter),122
+📏 Längster Text (Wörter),170
 🔢 Wenigste Referenzen,1
-🔢 Meiste Referenzen,6
+🔢 Meiste Referenzen,7
 ✂️ Geringste Ref-Wörter,0
-✂️ Meiste Ref-Wörter,122
+✂️ Meiste Ref-Wörter,114
 ,
 📐 Kategorisierung nach Textlänge (Wortanzahl),
 🗂️ Kategorie 0 (Wörter 0–9),0
 🗂️ Kategorie 1 (Wörter 10–19),2
-🗂️ Kategorie 2 (Wörter 20–29),5
-🗂️ Kategorie 3 (Wörter 30–39),11
-🗂️ Kategorie 4 (Wörter 40–49),11
-🗂️ Kategorie 5 (Wörter 50–59),11
-🗂️ Kategorie 6 (Wörter 60–69),6
-🗂️ Kategorie 7 (Wörter 70–79),6
-🗂️ Kategorie 8 (Wörter 80–89),4
+🗂️ Kategorie 2 (Wörter 20–29),10
+🗂️ Kategorie 3 (Wörter 30–39),18
+🗂️ Kategorie 4 (Wörter 40–49),14
+🗂️ Kategorie 5 (Wörter 50–59),20
+🗂️ Kategorie 6 (Wörter 60–69),17
+🗂️ Kategorie 7 (Wörter 70–79),14
+🗂️ Kategorie 8 (Wörter 80–89),10
 🗂️ Kategorie 9 (Wörter 90–99),1
-🗂️ Kategorie 10 (Wörter ≥100),3
+🗂️ Kategorie 10 (Wörter ≥100),14
 ,
 📊 Gruppierte Durchschnittswerte,
 ,
 📘 Gruppe 1 – Gesamtsummen,
-Anzahl Textsegmente,20
-Zeichen gesamt,7808
-Wörter gesamt,1334
-Referenzen gesamt,43
-Referenz-Wörter gesamt,735
-Nicht-Referenz-Wörter,599
+Anzahl Textsegmente,40
+Zeichen gesamt,16720
+Wörter gesamt,2788
+Referenzen gesamt,85
+Referenz-Wörter gesamt,1566
+Nicht-Referenz-Wörter,1222
 📘 Gruppe 1 – Durchschnittswerte,
-Ø Zeichen,390.4
-Ø Wörter,66.7
-Ø Referenzen,2.15
-Ø Ref-Wörter,36.75
-Ø NonRef-Wörter,29.95
-Ø Ref/Total,55.05%
-Ø NonRef/Total,44.95%
+Ø Zeichen,418.0
+Ø Wörter,69.7
+Ø Referenzen,2.12
+Ø Ref-Wörter,39.15
+Ø NonRef-Wörter,30.55
+Ø Ref/Total,56.35%
+Ø NonRef/Total,43.65%
 📘 Gruppe 1 – Min/Max,
 Kürzester Text (Wörter),34
-Längster Text (Wörter),117
+Längster Text (Wörter),170
 Min Referenzen,1
 Max Referenzen,5
 Min Ref-Wörter,9
-Max Ref-Wörter,68
+Max Ref-Wörter,75
 🗂️ Gruppe 1 – Kategorie 0 (Wörter 0–9),0
 🗂️ Gruppe 1 – Kategorie 1 (Wörter 10–19),0
 🗂️ Gruppe 1 – Kategorie 2 (Wörter 20–29),0
-🗂️ Gruppe 1 – Kategorie 3 (Wörter 30–39),2
+🗂️ Gruppe 1 – Kategorie 3 (Wörter 30–39),5
 🗂️ Gruppe 1 – Kategorie 4 (Wörter 40–49),3
-🗂️ Gruppe 1 – Kategorie 5 (Wörter 50–59),3
-🗂️ Gruppe 1 – Kategorie 6 (Wörter 60–69),4
-🗂️ Gruppe 1 – Kategorie 7 (Wörter 70–79),3
-🗂️ Gruppe 1 – Kategorie 8 (Wörter 80–89),2
+🗂️ Gruppe 1 – Kategorie 5 (Wörter 50–59),5
+🗂️ Gruppe 1 – Kategorie 6 (Wörter 60–69),10
+🗂️ Gruppe 1 – Kategorie 7 (Wörter 70–79),6
+🗂️ Gruppe 1 – Kategorie 8 (Wörter 80–89),5
 🗂️ Gruppe 1 – Kategorie 9 (Wörter 90–99),1
-🗂️ Gruppe 1 – Kategorie 10 (Wörter ≥100),2
+🗂️ Gruppe 1 – Kategorie 10 (Wörter ≥100),5
 ,
 📘 Gruppe 2 – Gesamtsummen,
-Anzahl Textsegmente,20
-Zeichen gesamt,6641
-Wörter gesamt,1116
-Referenzen gesamt,52
-Referenz-Wörter gesamt,1116
-Nicht-Referenz-Wörter,0
+Anzahl Textsegmente,40
+Zeichen gesamt,15090
+Wörter gesamt,2609
+Referenzen gesamt,125
+Referenz-Wörter gesamt,2396
+Nicht-Referenz-Wörter,213
 📘 Gruppe 2 – Durchschnittswerte,
-Ø Zeichen,332.05
-Ø Wörter,55.8
-Ø Referenzen,2.6
-Ø Ref-Wörter,55.8
-Ø NonRef-Wörter,0.0
-Ø Ref/Total,100.00%
-Ø NonRef/Total,0.00%
+Ø Zeichen,377.25
+Ø Wörter,65.22
+Ø Referenzen,3.12
+Ø Ref-Wörter,59.9
+Ø NonRef-Wörter,5.32
+Ø Ref/Total,93.50%
+Ø NonRef/Total,6.50%
 📘 Gruppe 2 – Min/Max,
-Kürzester Text (Wörter),26
-Längster Text (Wörter),122
+Kürzester Text (Wörter),21
+Längster Text (Wörter),126
 Min Referenzen,1
-Max Referenzen,6
-Min Ref-Wörter,26
-Max Ref-Wörter,122
+Max Referenzen,7
+Min Ref-Wörter,16
+Max Ref-Wörter,114
 🗂️ Gruppe 2 – Kategorie 0 (Wörter 0–9),0
 🗂️ Gruppe 2 – Kategorie 1 (Wörter 10–19),0
-🗂️ Gruppe 2 – Kategorie 2 (Wörter 20–29),2
-🗂️ Gruppe 2 – Kategorie 3 (Wörter 30–39),4
-🗂️ Gruppe 2 – Kategorie 4 (Wörter 40–49),2
-🗂️ Gruppe 2 – Kategorie 5 (Wörter 50–59),6
-🗂️ Gruppe 2 – Kategorie 6 (Wörter 60–69),1
-🗂️ Gruppe 2 – Kategorie 7 (Wörter 70–79),2
-🗂️ Gruppe 2 – Kategorie 8 (Wörter 80–89),2
+🗂️ Gruppe 2 – Kategorie 2 (Wörter 20–29),4
+🗂️ Gruppe 2 – Kategorie 3 (Wörter 30–39),5
+🗂️ Gruppe 2 – Kategorie 4 (Wörter 40–49),3
+🗂️ Gruppe 2 – Kategorie 5 (Wörter 50–59),8
+🗂️ Gruppe 2 – Kategorie 6 (Wörter 60–69),4
+🗂️ Gruppe 2 – Kategorie 7 (Wörter 70–79),6
+🗂️ Gruppe 2 – Kategorie 8 (Wörter 80–89),3
 🗂️ Gruppe 2 – Kategorie 9 (Wörter 90–99),0
-🗂️ Gruppe 2 – Kategorie 10 (Wörter ≥100),1
+🗂️ Gruppe 2 – Kategorie 10 (Wörter ≥100),7
 ,
 📘 Gruppe 3 – Gesamtsummen,
-Anzahl Textsegmente,20
-Zeichen gesamt,5365
-Wörter gesamt,805
-Referenzen gesamt,20
+Anzahl Textsegmente,40
+Zeichen gesamt,12765
+Wörter gesamt,1951
+Referenzen gesamt,40
 Referenz-Wörter gesamt,0
-Nicht-Referenz-Wörter,805
+Nicht-Referenz-Wörter,1951
 📘 Gruppe 3 – Durchschnittswerte,
-Ø Zeichen,268.25
-Ø Wörter,40.25
+Ø Zeichen,319.12
+Ø Wörter,48.78
 Ø Referenzen,1.0
 Ø Ref-Wörter,0.0
-Ø NonRef-Wörter,40.25
+Ø NonRef-Wörter,48.78
 Ø Ref/Total,0.00%
 Ø NonRef/Total,100.00%
 📘 Gruppe 3 – Min/Max,
 Kürzester Text (Wörter),12
-Längster Text (Wörter),71
+Längster Text (Wörter),120
 Min Referenzen,1
 Max Referenzen,1
 Min Ref-Wörter,0
 Max Ref-Wörter,0
 🗂️ Gruppe 3 – Kategorie 0 (Wörter 0–9),0
 🗂️ Gruppe 3 – Kategorie 1 (Wörter 10–19),2
-🗂️ Gruppe 3 – Kategorie 2 (Wörter 20–29),3
-🗂️ Gruppe 3 – Kategorie 3 (Wörter 30–39),5
-🗂️ Gruppe 3 – Kategorie 4 (Wörter 40–49),6
-🗂️ Gruppe 3 – Kategorie 5 (Wörter 50–59),2
-🗂️ Gruppe 3 – Kategorie 6 (Wörter 60–69),1
-🗂️ Gruppe 3 – Kategorie 7 (Wörter 70–79),1
-🗂️ Gruppe 3 – Kategorie 8 (Wörter 80–89),0
+🗂️ Gruppe 3 – Kategorie 2 (Wörter 20–29),6
+🗂️ Gruppe 3 – Kategorie 3 (Wörter 30–39),8
+🗂️ Gruppe 3 – Kategorie 4 (Wörter 40–49),8
+🗂️ Gruppe 3 – Kategorie 5 (Wörter 50–59),7
+🗂️ Gruppe 3 – Kategorie 6 (Wörter 60–69),3
+🗂️ Gruppe 3 – Kategorie 7 (Wörter 70–79),2
+🗂️ Gruppe 3 – Kategorie 8 (Wörter 80–89),2
 🗂️ Gruppe 3 – Kategorie 9 (Wörter 90–99),0
-🗂️ Gruppe 3 – Kategorie 10 (Wörter ≥100),0
+🗂️ Gruppe 3 – Kategorie 10 (Wörter ≥100),2

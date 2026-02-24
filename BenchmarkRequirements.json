@@ -512,7 +512,7 @@
           "req_id": "req_1",
           "category": "functional", 
           "furtherSpecialisation": null,
-          "gold_reference": "The system will feature an API to allow customers to build custom plug-ins to be able to meet their needs.",
+          "gold_reference": "The system will feature an API to allow customers to build custom plug-ins.",
           "alternatives": [
             null,
             null
@@ -608,8 +608,583 @@
       ]
     },
     {
-      "text_id": "21", 
+      "text_id": "21",
       "text_number": 21,
+      "source": "2001 - ctc network",
+      "pages": "5",
+      "original_text": "This document describes the requirements for the Dallas/Ft. Worth (DFW) Regional Center-to-Center (C2C) Communications Network that is based on a Texas Department of Transportation (TxDOT) C2C project. The TxDOT C2c project initially connected the DFW TXDOT Traffic Management Centers (TMCs). This C2C infrastructure implements a repository for traffic data and provides a mechanism to exchange device control information between TMCs.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This C2C infrastructure implements a repository for traffic data and provides a mechanism to exchange device control information between TMCs.",
+          "alternatives": [null]
+        }
+      ]
+    },
+    {
+      "text_id": "22",
+      "text_number": 22,
+      "source": "blit_draft_2010",
+      "pages": "9",
+      "original_text": "The system shall log errors, warnings, and informational messages to an external log file on the application server. The Development Team shall be required to adjust existing source code to use the external log file only if that source code must be modified to implement another requirement. The system shall log an error message to the external data file when the user is directed to the [SYSTEM NAME] error page.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall log errors, warnings, and informational messages to an external log file on the application server.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall log an error message to the external data file when the user is directed to the [SYSTEM NAME] error page.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "23",
+      "text_number": 23,
+      "source": "caiso_2008",
+      "pages": "5",
+      "original_text": "The owner or operator of any Voluntary Black Start unit that desires a Black Start generating unit status with the CAISO Balancing Authority shall: Demonstrate at least every five years, through simulation or testing, that the unit can perform its intended functions as required by the WECC BCP... Submit documentation of the test results and analysis to the CAISO, WECC, or NERC upon any request. Within 24 hours of conducting a Black Start test, all Participants will notify the CAISO RT Dispatcher by phone indicating the success or failure of the test. Within 14 days of performing a Black Start test, all Participants will file a letter with the CAISO regarding the success or failure of the test. The Black Start unit must have the ability to maintain voltage within emergency voltage limits over a range of loading from no external load to full external load in accordance with NERC reliability standards. The Black Start unit must be equipped with governors that are capable of operating in an isochronous mode.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Black Start unit must have the ability to maintain voltage within emergency voltage limits over a range of loading from no external load to full external load in accordance with NERC reliability standards.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Black Start unit must be equipped with governors that are capable of operating in an isochronous mode.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "24",
+      "text_number": 24,
+      "source": "digitalhome_2010",
+      "pages": "11",
+      "original_text": "5.2.1 The DigitalHome System must be highly reliable with no more than 1 failure per 10,000 hours of operation. 5.2.2 The Digital Home System shall incorporate backup and recovery mechanisms. 5.2.2.1 The DH System will backup all system data (configuration, default parameter settings, planning, and usage data) on a daily basis, with the backup time set by the DH Technician at system set up. 5.2.2.2 If the DH System fails (due to power loss, loss of internet access, or other software or hardware failure), the system recovery mechanism shall restore system data from the most recent backup.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Digital Home System shall incorporate backup and recovery mechanisms.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The DH System will backup all system data (configuration, default parameter settings, planning, and usage data) on a daily basis, with the backup time set by the DH Technician at system set up.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the DH System fails (due to power loss, loss of internet access, or other software or hardware failure), the system recovery mechanism shall restore system data from the most recent backup.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "25",
+      "text_number": 25,
+      "source": "gaia_2009",
+      "pages": "19",
+      "original_text": "GOG must provide a way to be run from a command line or a shell script. GOG is built as a standalone java aplication that could be invoked from a command line and deployed as a jar file. GOG runs on LINUX, UNIX and MAC computers (minimum).GOG results are platform independent. GOG must be able to process one complete source processing on 2 CPU seconds.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "GOG must provide a way to be run from a command line or a shell script.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "GOG is built as a standalone java aplication that could be invoked from a command line and deployed as a jar file.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },    {
+      "text_id": "26",
+      "text_number": 26,
+      "source": "hats_2001",
+      "pages": "14",
+      "original_text": "The HATS-GUI shall orchestrate the parsing of transformation language programs and target files. Parsing entails translating a human-readable text file into a syntax derivation tree. Parsing can be a time-consuming operation, particularly for multiple look-ahead grammars. In order to expedite execution of transformations, parsed versions of files can be saved.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The HATS-GUI shall orchestrate the parsing of transformation language programs and target files.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Parsed versions of files can be saved.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "27",
+      "text_number": 27,
+      "source": "space_fractions_2001",
+      "pages": "2",
+      "original_text": "The Space Fractions project is a learning tool created to help improve fraction-solving skills for sixth-grade students. The product will be a web-based, interactive game. At the end of the game, students will be given feedback based on their game scores. We are also providing an umbrella for the past games created. The umbrella will be a web-based menu system allowing the user to choose between the games.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "At the end of the game, students will be given feedback based on their game scores.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The umbrella will be a web-based menu system allowing the user to choose between the games.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "28",
+      "text_number": 28,
+      "source": "vub_2008",
+      "pages": "13",
+      "original_text": "If an error would occur during a request, the user should receive an error message stating what was the cause of the error. The error should also be logged in the PMS to notify the Administrator(s) of the occurred technical difficulties. The PMS web interface will comply with the W3C XHTML 1.0 Transitional standard [3].",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If an error would occur during a request, the user should receive an error message stating what was the cause of the error.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The error should also be logged in the PMS.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "29",
+      "text_number": 29,
+      "source": "2004 - colorcast",
+      "pages": "9",
+      "original_text": "This is a user experience tool. The user color palette tool will store a list of the users recent color searches. If the color sample matcher is loaded, the user color palette tool will also store recent uploaded images for matching. The user color matcher only associates this information with a single client based on a persistent client session. This user data will be removed from the server after 30 days. This information is private but not secure.",
+      "numberOfRequirements": 4,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The user color palette tool will store a list of the users recent color searches.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "If the color sample matcher is loaded, the user color palette tool will also store recent uploaded images for matching.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The user color matcher only associates this information with a single client based on a persistent client session.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This user data will be removed from the server after 30 days.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "30",
+      "text_number": 30,
+      "source": "2004 - colorcast",
+      "pages": "9",
+      "original_text": "The administrative interface allows administrative users to update, add, and delete paint information. Administrative users are also able to add users. Refer to section 2.3 for development and implementation of user classes and access permissions.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The administrative interface allows administrative users to update, add, and delete paint information.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Administrative users are also able to add users.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "31",
+      "text_number": 31,
+      "source": "2004 - colorcast",
+      "pages": "9",
+      "original_text": "The color sample matcher allows the client user to upload images in a common format for matching. The color sample matcher will allow the user to graphically select with a hardware pointing device the color or blended color group they wish to use in a color search. 4.1.1 Priority Low priority. This module is not a requirement of the project. It is included for specification purposes only.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The color sample matcher allows the client user to upload images in a common format for matching.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The color sample matcher will allow the user to graphically select with a hardware pointing device the color or blended color group they wish to use in a color search.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "32",
+      "text_number": 32,
+      "source": "water_use_tracking_2007",
+      "pages": "28",
+      "original_text": "This use case will be used when an actor needs to access the Water Use Tracking (WUT) System, a browser-based, distributed 3-tier client/server application initially deployed on SWFWMD's Intranet. To access the WUT System, the actor will request the browser to display the WUT System Startup Page. The information and features available to the actor will be controlled through the WUT System role-based security and WUT System Roles and their associated privileges. When the actor initially requests access, the WUT System will determine the actor's role and this will, in turn, determine the features available to the actor.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "To access the WUT System, the actor will request the browser to display the WUT System Startup Page.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "non-functional",
+          "furtherSpecialisation": "security",
+          "gold_reference": "The information and features available to the actor will be controlled through the WUT System role-based security and WUT System Roles and their associated privileges.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "When the actor initially requests access, the WUT System will determine the actor's role and this will, in turn, determine the features available to the actor.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "33",
+      "text_number": 33,
+      "source": "2005 - phin",
+      "pages": "14",
+      "original_text": "Systems supporting OM must be able to exchange messages for confirmed, probable and suspect cases, and the other case classifications that are noted in the PHIN message implementation guide, with systems supporting surveillance, early event detection (EED), and other preparedness areas. This requirement is identified as a key performance measure for assessing preparedness as described in PHIN Preparedness Key Performance Measures, available at www.cdc.gov/phin.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Systems supporting OM must be able to exchange messages for confirmed, probable and suspect cases, and the other case classifications that are noted in the PHIN message implementation guide, with systems supporting surveillance, early event detection (EED), and other preparedness areas.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "34",
+      "text_number": 34,
+      "source": "2005 - phin",
+      "pages": "14",
+      "original_text": "2.5.2 Systems supporting OM must be able to accept data from other partner systems supporting OM. 2.5.3 Systems supporting OM must be able to create and send messages for laboratory test requests. This requirement is identified as a key performance measure for assessing preparedness as described in PHIN Preparedness Key Performance Measures, available at www.cdc.gov/phin.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Systems supporting OM must be able to accept data from other partner systems supporting OM.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Systems supporting OM must be able to create and send messages for laboratory test requests.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "35",
+      "text_number": 35,
+      "source": "2001 - elsfork",
+      "pages": "13",
+      "original_text": "A verbal dialogue system (e.g. telephone) is essential for contacts between operation and maintenance personnel in the wind power plant and the control centre operator. Video communication may also facilitate the co-operation between field personnel and control centre personnel. Video may also be used for supervision of equipment. However these function is not within the scope of this specification.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A verbal dialogue system (e.g. telephone) is essential for contacts between operation and maintenance personnel in the wind power plant and the control centre operator.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "36",
+      "text_number": 36,
+      "source": "2001 - elsfork",
+      "pages": "11",
+      "original_text": "Basically the communication system must assist the operators, users and other interested parties in performing their tasks by provision of services. The system must be flexible in supporting future requirements and future developments. The system must be open in the sense that anyone shall be able to get information on anything from anywhere, once they have authorisation to the system. The system thus shall be adapted to individual users and services provided accordingly by means of configurations, set-ups etc.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Basically the communication system must assist the operators, users and other interested parties in performing their tasks by provision of services.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system must be open in the sense that anyone shall be able to get information on anything from anywhere, once they have authorisation to the system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system thus shall be adapted to individual users and services provided accordingly by means of configurations, set-ups etc.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "37",
+      "text_number": 37,
+      "source": "2004 - colorcast",
+      "pages": "11",
+      "original_text": "Basically the communication system must assist the operators, users and other interested parties in performing their tasks by provision of services. The system must be flexible in supporting future requirements and future developments. The system must be open in the sense that anyone shall be able to get information on anything from anywhere, once they have authorisation to the system. The system thus shall be adapted to individual users and services provided accordingly by means of configurations, set-ups etc.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Basically the communication system must assist the operators, users and other interested parties in performing their tasks by provision of services.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system must be open in the sense that anyone shall be able to get information on anything from anywhere, once they have authorisation to the system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system thus shall be adapted to individual users and services provided accordingly by means of configurations, set-ups etc.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "38",
+      "text_number": 38,
+      "source": "2005 - grid 3D",
+      "pages": "11",
+      "original_text": "This section describes the functional requirements for the Grid 3D application. Each functional requirement should have a fit criterion in order to make it possible to test whether the requirement is implemented as specified in the delivered product. The product shall plot the data points in a scientifically correct manner. The grid axis should be labelled correctly according to the input from the data file. Data points should be coloured in accordance to the cluster number (contained in the data file).",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The product shall plot the data points.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The grid axis should be labelled correctly according to the input from the data file.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Data points should be coloured in accordance to the cluster number (contained in the data file).",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "39",
+      "text_number": 39,
+      "source": "0000 - cctns",
+      "pages": "7",
+      "original_text": "The System must be able to export audit trails for specified cases (without affecting the audit trail stored by the System). This functionality can be used by external auditors who wish to examine or analyse system activity.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The System must be able to export audit trails for specified cases (without affecting the audit trail stored by the System).",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "40",
+      "text_number": 40,
+      "source": "1999 - tcs",
+      "pages": "13",
+      "original_text": "The major focus of the TCS program is software. The software will provide the UAV operator the necessary tools for computer related communications, mission tasking, mission planning, mission execution, data receipt, data processing, limited data exploitation, and data dissemination.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The software will provide the UAV operator the necessary tools for computer related communications, mission tasking, mission planning, mission execution, data receipt, data processing, limited data exploitation, and data dissemination.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "41", 
+      "text_number": 41,
       "source": "0000 - gamma j",
       "pages": "7",
       "original_text": "Customers will be able to create accounts to store their customer profiles, configure contact information, view their purchase history, and confirm orders. Customers will be able to register, log in, and log out of their accounts. Furthermore, Customer profiles will also include payment information, such as the ability to store credit card information, and address information.",
@@ -646,8 +1221,8 @@
       ]
     },
     {
-      "text_id": "22", 
-      "text_number": 22,
+      "text_id": "42", 
+      "text_number": 42,
       "source": "0000 - gamma j",
       "pages": "7",
       "original_text": "Products will be stored in multi-tiered categories; a category can contain sub categories or products. The inventory management will allow for administrators to update the categories, the products placed in categories, and the specific product details.",
@@ -675,8 +1250,8 @@
       ]
     },
     {
-      "text_id": "23", 
-      "text_number": 23,
+      "text_id": "43", 
+      "text_number": 43,
       "source": "0000 - gamma j",
       "pages": "8",
       "original_text": "Customers will also be able to add products into the shopping cart. The shopping cart will clearly display the number of items in the cart, along with the total cost. The customer will also be able to add to or remove products from the shopping cart prior to checkout and order confirmation.",
@@ -713,8 +1288,8 @@
       ]
     },
     {
-      "text_id": "24", 
-      "text_number": 24,
+      "text_id": "44", 
+      "text_number": 44,
       "source": "0000 - gamma j",
       "pages": "8",
       "original_text": "Customers will be able to confirm the order after checkout. If the order is incorrect, the customer will be able to revise and update their order. The customer will then receive a confirmation email with the specific order details.",
@@ -751,8 +1326,8 @@
       ]
     },
     {
-      "text_id": "25", 
-      "text_number": 25,
+      "text_id": "45", 
+      "text_number": 45,
       "source": "1998 - themas",
       "pages": "15",
       "original_text": "A current temperature value that is received from an individual thermostat shall be compared to the valid temperature range values. If the current temperature value is strictly less than the lower value of the valid temperature range or if the received temperature value is strictly greater than the upper value of the valid temperature range, then the THEMAS system shall identify the current temperature value as an invalid temperature and shall output an invalid temperature status. Otherwise, the THEMAS system shall output a valid temperature status.",
@@ -789,8 +1364,8 @@
       ]
     },
     {
-      "text_id": "26", 
-      "text_number": 26,
+      "text_id": "46", 
+      "text_number": 46,
       "source": "1998 - themas",
       "pages": "17",
       "original_text": "When a request to turn on a heating or cooling unit is received, the system shall determine if the request can be honored. If the maximum number of heating or cooling units is already running, the request will be added to a LIFO queue. If the maximum number of heating or cooling units is not running, this process will generate a request to turn on the requested unit.",
@@ -827,8 +1402,8 @@
       ]
     },
     {
-      "text_id": "27", 
-      "text_number": 27,
+      "text_id": "47", 
+      "text_number": 47,
       "source": "1998 - themas",
       "pages": "18",
       "original_text": "When a request to turn on or off a heating or cooling unit is made, this process shall generate the appropriate request to carry out that request. This request shall include the designation of the heating or cooling unit and a flag to indicate whether that unit is to be turned on or off.",
@@ -856,8 +1431,8 @@
       ]
     },
     {
-      "text_id": "28", 
-      "text_number": 28,
+      "text_id": "48", 
+      "text_number": 48,
       "source": "2008 - keepass",
       "pages": "18",
       "original_text": "The user can modify the context of an entry he already has added. This can be done by selecting view/edit entry. In order for that to happen, the user must select an entry first. When he does this, the form he filled in when he created or last modified the entry open. Then the user can change the group, title, user name, password, URL, notes, expiration date and attachment file. His changes are saved by clicking OK.",
@@ -921,8 +1496,8 @@
       ]
     },
     {
-      "text_id": "29", 
-      "text_number": 29,
+      "text_id": "49", 
+      "text_number": 49,
       "source": "2008 - keepass",
       "pages": "19",
       "original_text": "The user can delete an existing entry by selecting it and then by clicking delete entry. When this is done a message appears and informs the user that if he deletes the entry he will not be able to restore it back.",
@@ -950,8 +1525,8 @@
       ]
     },
     {
-      "text_id": "30", 
-      "text_number": 30,
+      "text_id": "50", 
+      "text_number": 50,
       "source": "2009 - video search",
       "pages": "4",
       "original_text": "User enters search term and starts search – system sends queries to the torrent websites in its database based on the search term. Results for this query will then be sent to the torrent tab in the program where they will display information such as website, seeds, peers, size, date posted and a link for the webpage.",
@@ -979,8 +1554,8 @@
       ]
     },    
     {
-      "text_id": "31", 
-      "text_number": 31,
+      "text_id": "51", 
+      "text_number": 51,
       "source": "2009 - video search",
       "pages": "4",
       "original_text": "User sorts the search results by clicking once on a column header – system sorts all results by descending/ascending order. User clicks on next page button – system displays the next set of results for the search.",
@@ -1008,7 +1583,7 @@
       ]
     },    
     {
-      "text_id": "32", 
+      "text_id": "52", 
       "text_number": 32,
       "source": "2009 - library",
       "pages": "8",
@@ -1037,12 +1612,12 @@
       ]
     },    
     {
-      "text_id": "33", 
-      "text_number": 33,
+      "text_id": "53", 
+      "text_number": 53,
       "source": "2009 - library",
       "pages": "10",
       "original_text": "System allows creation and modification of loan rules that allow or disallow check-out of items, calculate loan periods, and determine renewal limits. Loan rules may evaluate patron type, current number of items checked out, current patron account balance, item type, item status, owning location code, check-out location code, and other criteria. For example, loan rules may prohibit patrons from checking out items with an unavailable status, e.g. an item with a triggered hold for another patron or an item that is already checked out to another patron. Loan rules can access check-out location open/closed schedule in calculating due date. Loan rules also specify whether a specific criteria may be overridden by staff with specific privileges or roles.",
-      "numberOfRequirements": 4,
+      "numberOfRequirements": 5,
       "requirements": [
         {
           "req_id": "req_1",
@@ -1067,7 +1642,7 @@
           "req_id": "req_3",
           "category": "functional",
           "furtherSpecialisation": null,
-          "gold_reference": "For example, loan rules may prohibit patrons from checking out items with an unavailable status, e.g. an item with a triggered hold for another patron or an item that is already checked out to another patron.",
+          "gold_reference": "For example, loan rules may prohibit patrons from checking out items with an unavailable status.",
           "alternatives": [
             null
           ]
@@ -1076,7 +1651,16 @@
           "req_id": "req_4",
           "category": "functional",
           "furtherSpecialisation": null,
-          "gold_reference": "Loan rules can access check-out location open/closed schedule in calculating due date. Loan rules also specify whether a specific criteria may be overridden by staff with specific privileges or roles.",
+          "gold_reference": "Loan rules can access check-out location open/closed schedule in calculating due date.", 
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_5",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Loan rules also specify whether a specific criteria may be overridden by staff with specific privileges or roles.",
           "alternatives": [
             null
           ]
@@ -1084,8 +1668,8 @@
       ]
     },    
     {
-      "text_id": "34", 
-      "text_number": 34,
+      "text_id": "54", 
+      "text_number": 54,
       "source": "2005 - microcare",
       "pages": "17",
       "original_text": "The system should generate message with two option 'Continue – Yes/No' while the user trying to create a new VSP with an existing name. If the user press Yes the system will allow the user to enter the same, if not the system wont allow the new entry to save.",
@@ -1113,8 +1697,8 @@
       ]
     },    
     {
-      "text_id": "35", 
-      "text_number": 35,
+      "text_id": "55", 
+      "text_number": 55,
       "source": "2005 - microcare",
       "pages": "25",
       "original_text": "The system captures the thump impression available in each claim form, and needs to compare it with the same voucher numbers previous visits if available. If the thump impression are mismatching for the same patient (Client / Partner) on same voucher the system would automatically make a count on it. If the claim from same VSP having more than two times of Thump Impression mismatching, then the system should automatically produce a warning message and the same time the system should In-Activate the VSP.",
@@ -1151,8 +1735,8 @@
       ]
     },    
     {
-      "text_id": "36", 
-      "text_number": 36,
+      "text_id": "56", 
+      "text_number": 56,
       "source": "2009 - library",
       "pages": "15",
       "original_text": "System administrators can create report templates that are available to front-line staff, and can be run as is or modified to the staff person's particular needs.",
@@ -1171,8 +1755,8 @@
       ]
     },    
     {
-      "text_id": "37", 
-      "text_number": 37,
+      "text_id": "57", 
+      "text_number": 57,
       "source": "2010 - blit draft",
       "pages": "7",
       "original_text": "The User shall be able to view the hyperlinks and descriptions listed. The User shall be able to choose a function by clicking the hyperlink. The system shall display the desired operational page for the user after clicking the hyperlink.",
@@ -1209,8 +1793,8 @@
       ]
     },
     {
-      "text_id": "38", 
-      "text_number": 38,
+      "text_id": "58", 
+      "text_number": 58,
       "source": "2007 - ertms",
       "pages": "25",
       "original_text": "Transferring to Full Supervision shall occur automatically when a movement authority and all other necessary information is received through track-to-train transmission. It shall be possible for the trackside to ask a driver for confirmation about the occupancy of the track ahead before sending a Full Supervision movement authority.",
@@ -1238,8 +1822,8 @@
       ]
     },
     {
-      "text_id": "39", 
-      "text_number": 39,
+      "text_id": "59", 
+      "text_number": 59,
       "source": "2007 - ertms",
       "pages": "14",
       "original_text": "If, as a result of an automatic transition, except for transitions to and from National Operation (STM), the responsibility for the driver increases, the ETCS shall seek an acknowledgement from the driver, whether the train is stationary or not.",
@@ -1258,8 +1842,8 @@
       ]
     },
     {
-      "text_id": "40", 
-      "text_number": 40,
+      "text_id": "60", 
+      "text_number": 60,
       "source": "2007 - ertms",
       "pages": "31",
       "original_text": "The ETCS trainborne equipment shall supervise the end of movement authority, if this information is available on-board. The target distance to be displayed on the DMI shall be based on the most restrictive braking curve. Together with the movement authority, the on board shall be able to receive one or more time-out(s) for certain sections of the movement authority, and shorten the movement authority accordingly when a time out expires.",
@@ -1296,8 +1880,848 @@
       ]
     },
     {
-      "text_id": "41", 
-      "text_number": 41,
+      "text_id": "61",
+      "text_number": 61,
+      "source": "2001 - ctc network",
+      "pages": "5",
+      "original_text": "The C2C infrastructure must interconnect several dissimilar traffic management systems. In order to create the C2C infrastructure, interfaces to the existing systems will be created. The data from these interfaces will communicate with the existing system in a system specific format. The data being deposited into the C2C infrastructure will be converted to a standard format (based on the ITS standards).",
+      "numberOfRequirements": 4,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The C2C infrastructure must interconnect several dissimilar traffic management systems.",
+          "alternatives": [null]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Interfaces to the existing systems will be created.",
+          "alternatives": [null]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The data from these interfaces will communicate with the existing system in a system specific format.",
+          "alternatives": [null]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The data being deposited into the C2C infrastructure will be converted to a standard format (based on the ITS standards).",
+          "alternatives": [null]
+        }
+      ]
+    },
+    {
+      "text_id": "62",
+      "text_number": 62,
+      "source": "agentmom_2003",
+      "pages": "4",
+      "original_text": "2.2.1 Enable agents to broadcast a message to all the agents within the same local network. 2.2.2 Enable agents to multicast a message to all the agents within the same multicast address. 2.2.3 Enable agents to unicast a message to other agents within organization. 2.2.4 Allow agents to choose among unicast, multicast and broadcast \ncommunication. 2.2.5 Allow agents to join and leave multicast group. 2.2.6 Provide message encryption and decryption techniques for secured communication. 2.2.7 Allow agents to choose to encrypt or not to encrypt message. ",
+      "numberOfRequirements": 7,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Enable agents to broadcast a message to all the agents within the same local network.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Enable agents to multicast a message to all the agents within the same multicast address.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Enable agents to unicast a message to other agents within organization.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Allow agents to choose among unicast, multicast and broadcast communication.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_5",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Allow agents to join and leave multicast group.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_6",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Provide message encryption and decryption techniques for secured communication.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_7",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Allow agents to choose to encrypt or not to encrypt message.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "63",
+      "text_number": 63,
+      "source": "blit_draft_2010",
+      "pages": "7",
+      "original_text": "2.1.1.2.1.1 A user with admin privileges shall be able to Add/Create a new user and associate the user with specified role(s) in the system. 2.1.1.2.1.2 The system shall display an error message if the new user is found in the [system name] system. 2.1.1.2.1.3 The system shall display an error message if the new user is not active in the Active Directory.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A user with admin privileges shall be able to Add/Create a new user and associate the user with specified role(s) in the system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall display an error message if the new user is found in the [system name] system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall display an error message if the new user is not active in the Active Directory.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "64",
+      "text_number": 64,
+      "source": "blit_draft_2010",
+      "pages": "8",
+      "original_text": "All required fields as specified in the UIS must be marked with a red asterisk alerting the user to fill the required fields in. The user shall be able to save data after creating/adding a new user or cancel data to abort the process. The system shall clear up data if the user chooses to click the Cancel button in the midst of creating/adding a new user.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "All required fields as specified in the UIS must be marked with a red asterisk.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The user shall be able to save data after creating/adding a new user or cancel data to abort the process.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall clear up data if the user chooses to click the Cancel button in the midst of creating/adding a new user.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "65",
+      "text_number": 65,
+      "source": "2004 - colorcast",
+      "pages": "9",
+      "original_text": "The administrative interface allows administrative users to update, add, and delete paint information. Administrative users are also able to add users.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The administrative interface allows administrative users to update, add, and delete paint information.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Administrative users are also able to add users.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "66",
+      "text_number": 66,
+      "source": "0000 - cctns",
+      "pages": "4",
+      "original_text": "The Search module of the CCTNS gives police personnel the ability to execute a basic or advanced search on cases. Using the search functionality, police personnel can search for a particular person, type of crime, modus operandi, property etc. It also gives the user the ability to customize the results view by criminal/accused or by cases.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Search module of the CCTNS gives police personnel the ability to execute a basic or advanced search on cases.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Using the search functionality, police personnel can search for a particular person, type of crime, modus operandi, property etc.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "It also gives the user the ability to customize the results view by criminal/accused or by cases.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "67",
+      "text_number": 67,
+      "source": "0000 - cctns",
+      "pages": "6",
+      "original_text": "An audit trail is a record of actions taken by either the user or the system triggers. This includes actions taken by users or Administrators, or actions initiated automatically by the system as a result of system parameters. The System must keep an unalterable audit trail capable of automatically capturing and storing information about:",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The System must keep an unalterable audit trail capable of automatically capturing and storing information about:",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "68",
+      "text_number": 68,
+      "source": "0000 - cctns",
+      "pages": "16",
+      "original_text": "The functional architecture is composed of 4 major components based on SOA principles. Each of the components contains multiple services as defined by Service Definition. The core services, support layer and security and access control components can be deployed as standard components with necessary configuration changes. The customization layer can override and add to the core services based on the specific state requirements and can be plugged with the core services.",
+      "numberOfRequirements": 4,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": "architectural",
+          "gold_reference": "The functional architecture is composed of 4 major components based on SOA principles.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": "architectural",
+          "gold_reference": "Each of the components contains multiple services as defined by Service Definition.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": "deployment",
+          "gold_reference": "The core services, support layer and security and access control components can be deployed as standard components with necessary configuration changes.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": "extensibility",
+          "gold_reference": "The customization layer can override and add to the core services based on the specific state requirements and can be plugged with the core services.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "69",
+      "text_number": 69,
+      "source": "digitalhome_2010",
+      "pages": "9",
+      "original_text": "The Digital Home programmable thermostat shall allow a user to monitor and control a home's temperature from any location, using a web ready computer, cell phone, or PDA. 4.2.1.1 A DH user shall be able to read the temperature at a thermostat position. 4.2.1.2 A DH user shall be able to set the thermostat temperatures to between $60^{circ}F$ and $80^{circ}F$, inclusive, at one degree increments. 4.2.2 Up to eight thermostats shall be placed in rooms throughout the home. 4.2.3 A thermostat unit shall communicate, through wireless signals, with the master control unit. 4.2.4 The system shall support Fahrenheit and Celsius temperature values.",
+      "numberOfRequirements": 6,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Digital Home programmable thermostat shall allow a user to monitor and control a home's temperature from any location, using a web ready computer, cell phone, or PDA.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A DH user shall be able to read the temperature at a thermostat position.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A DH user shall be able to set the thermostat temperatures to between $60^{circ}F$ and $80^{circ}F$, inclusive, at one degree increments.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Up to eight thermostats shall be placed in rooms throughout the home.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_5",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A thermostat unit shall communicate, through wireless signals, with the master control unit.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_6",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall support Fahrenheit and Celsius temperature values.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "70",
+      "text_number": 70,
+      "source": "digitalhome_2010",
+      "pages": "10",
+      "original_text": "4.4.1 The DigitalHome security system consists of contact sensors and a set security alarms. 4.4.1.1 A DigitalHome system shall be able to manage up to fifty door and window contact sensors. 4.4.1.2 A DigitalHome system shall be able to activate both light and sound alarms: one sound alarm and one light alarm subsystem, with multiple lights. 4.4.2 When a security breach occurs and a contact sensor is set OPEN, the alarm system shall be activated.",
+      "numberOfRequirements": 4,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The DigitalHome security system consists of contact sensors and a set security alarms.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A DigitalHome system shall be able to manage up to fifty door and window contact sensors.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A DigitalHome system shall be able to activate both light and sound alarms: one sound alarm and one light alarm subsystem, with multiple lights.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "When a security breach occurs and a contact sensor is set OPEN, the alarm system shall be activated.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "71",
+      "text_number": 71,
+      "source": "digitalhome_2010",
+      "pages": "10",
+      "original_text": "4.5.1 The Digital Home programmable Appliance Manager shall provide for management of a home's small appliances, including lighting units, by allowing a user to turn them on or off as desired. 4.5.2 The Appliance Manager shall be able to manage up to one hundred 115 volt, 10 amp power switches. 4.5.3 The system shall be able to provide information about the state of a power switch (OFF or ON), indicating the whether an appliance connected to the power switch is OFF or ON. 4.5.4 The system shall be able to change the state of a power switch (OFF to ON, or ON to OFF), in turn changing the state of an appliance connected to the power switch.",
+      "numberOfRequirements": 4,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Digital Home programmable Appliance Manager shall provide for management of a home's small appliances, including lighting units, by allowing a user to turn them on or off as desired.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Appliance Manager shall be able to manage up to one hundred 115 volt, 10 amp power switches.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall be able to provide information about the state of a power switch (OFF or ON), indicating the whether an appliance connected to the power switch is OFF or ON.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The system shall be able to change the state of a power switch (OFF to ON, or ON to OFF), in turn changing the state of an appliance connected to the power switch.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "72",
+      "text_number": 72,
+      "source": "digitalhome_2010",
+      "pages": "10",
+      "original_text": "4.6.1 DigitalHome Planner shall provide a user with the capability to direct the system to set various preset home parameters (temperature, humidity, security contacts, and on/off appliance/light status) for certain time periods. 4.6.2 DigitalHome provides a monthly planner. 4.6.2.1 For a given month and year, a user shall be able to create or modify a month plan that specifies for each day, for up to four daily time periods, the environmental parameter settings. 4.6.2.2 A user shall be able to override planned parameter values, through the DH website, or if available, through manual switches on household devices.",
+      "numberOfRequirements": 4,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "DigitalHome Planner shall provide a user with the capability to direct the system to set various preset home parameters (temperature, humidity, security contacts, and on/off appliance/light status) for certain time periods.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "DigitalHome provides a monthly planner.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "For a given month and year, a user shall be able to create or modify a month plan that specifies for each day, for up to four daily time periods, the environmental parameter settings.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A user shall be able to override planned parameter values, through the DH website, or if available, through manual switches on household devices.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "73",
+      "text_number": 73,
+      "source": "digitalhome_2010",
+      "pages": "7",
+      "original_text": "3.4.3.1 The DH Gateway device shall provide communication with all the DigitalHome devices and shall connect with a broadband Internet connection. 3.4.3.2 The Gateway shall contain an RF Module, which shall send and receive wireless communications between the Gateway and the other DigitalHome devices (sensors and controllers). 3.4.3.3 The Gateway device shall operate up to a 1000-foot range for indoor transmission.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The DH Gateway device shall provide communication with all the DigitalHome devices and shall connect with a broadband Internet connection.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Gateway shall contain an RF Module, which shall send and receive wireless communications between the Gateway and the other DigitalHome devices (sensors and controllers).",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The Gateway device shall operate up to a 1000-foot range for indoor transmission.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "74",
+      "text_number": 74,
+      "source": "evla_back_2002",
+      "pages": "20",
+      "original_text": "All users of the system shall login using some form of unique identification. All login attempts shall be done in a secure manner. A system administrator shall have unrestricted access to all aspects of the system. Each user shall have a set of system access properties that defines the user privileges within the system. The administrator shall have the ability to create and add a new user to the system. The administrator shall have the ability to remove a user from the system. The administrator shall have the ability to edit a user system access properties. The administrator shall have the ability to block all access to the system for all users or selectively by user.",
+      "numberOfRequirements": 7,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "All users of the system shall login using some form of unique identification.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A system administrator shall have unrestricted access to all aspects of the system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Each user shall have a set of system access properties that defines the users privileges within the system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_5",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The administrator shall have the ability to create and add a new user to the system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_6",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The administrator shall have the ability to remove a user from the system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_7",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The administrator shall have the ability to edit a users system access properties.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_8",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The administrator shall have the ability to block all access to the system for all users or selectively by user.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "75",
+      "text_number": 75,
+      "source": "evla_corr_2002",
+      "pages": "8",
+      "original_text": "The ability to attempt recovery from failure or hot-swapped hardware devices will be built into this system. Should a CMIB subsystem fail and not respond to reboot requests or other self-heal attempts, an alert notice will be issued so appropriate personnel can affect a hardware repair. The CMIB subsystem will then be automatically restarted and configured back into the current operational environment.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The ability to attempt recovery from failure or hot-swapped hardware devices will be built into this system.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Should a CMIB subsystem fail and not respond to reboot requests or other self-heal attempts, an alert notice will be issued.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The CMIB subsystem will then be automatically restarted and configured back into the current operational environment.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "76",
+      "text_number": 76,
+      "source": "hats_2001",
+      "pages": "28",
+      "original_text": "[SRSreq 01] Any operation requiring the user to supply a file name shall allow the user either to select the files from a list derived from files in the currently open application or to key in a file name, a relative path name, or a complete path name.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Any operation requiring the user to supply a file name shall allow the user either to select the files from a list derived from files in the currently open application or to key in a file name, a relative path name, or a complete path name.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "77",
+      "text_number":  77,
+      "source": "gamma_j_0000",
+      "pages": "5",
+      "original_text": "SE is the tool that assists the user in finding a specific item in the database. It can receive search criteria, find search criteria, and return the results of the search.",
+      "numberOfRequirements": 2,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "SE is the tool that assists the user in finding a specific item in the database.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "It can receive search criteria, find search criteria, and return the results of the search.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "78",
+      "text_number": 78,
+      "source": "hats_2001",
+      "pages": "33",
+      "original_text": "[SRSreq 69] When a user selects the File/Select menu item, the HATS-GUI shall provide the user with a list of files in the currently open application and allow the user to select a file. This file becomes the currently selected file. If no application is currently open, the HATS-GUI will prompt the user to select and open an application, then prompt the user to select a file.",
+      "numberOfRequirements": 3,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "When a user selects the File/Select menu item, the HATS-GUI shall provide the user with a list of files in the currently open application and allow the user to select a file.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "This file becomes the currently selected file.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": " If no application is currently open, the HATS-GUI will prompt the user to select and open an application, then prompt the user to select a file.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "79",
+      "text_number": 79,
+      "source": "hats_2001",
+      "pages": "23",
+      "original_text": "User selects one or more displayed nodes. Displayed node selection methods are described here. A single node can be selected by a right mouse click on the node. A single node can be selected via the keyboard by moving the keyboard cursor to a node and pressing the enter key. The keyboard cursor is moved between nodes using the tab key. Several nodes can be selected by drawing a mouse box around the desired nodes. Several nodes can be selected by holding the shift key down and selecting individual displayed nodes. When a user selects a set of nodes using these operations (and the shift key is not held down), the previously selected set of nodes (if any) is unselected.",
+      "numberOfRequirements": 5,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "User selects one or more displayed nodes.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_2",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A single node can be selected by a right mouse click on the node.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_3",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "A single node can be selected via the keyboard by moving the keyboard cursor to a node and pressing the enter key.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_4",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The keyboard cursor is moved between nodes using the tab key.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_5",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Several nodes can be selected by drawing a mouse box around the desired nodes.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_6",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "Several nodes can be selected by holding the shift key down and selecting individual displayed nodes.",
+          "alternatives": [
+            null
+          ]
+        },
+        {
+          "req_id": "req_7",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "When a user selects a set of nodes using these operations (and the shift key is not held down), the previously selected set of nodes (if any) is unselected.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "80",
+      "text_number": 80,
+      "source": "inventory_0000",
+      "pages": "3",
+      "original_text": "The IUFA application give the unauthorised user the possibility to use a web based interface that will available to use any time.",
+      "numberOfRequirements": 1,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": "The IUFA application give the unauthorised user the possibility to use a web based interface that will available to use any time.",
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "81", 
+      "text_number": 81,
       "source": "1995 - gemini",
       "pages": "40",
       "original_text": "Effectiveness should be evaluated in terms of cost, space requirements, longevity, and speed. This shall lead to the definition of a Gemini 8m Telescopes standard, used on all instruments. In general, operational overheads must be kept as low as possible, to maximize actual observing times.",
@@ -1316,8 +2740,8 @@
       ]
     },
     {
-      "text_id": "42", 
-      "text_number": 42,
+      "text_id": "82", 
+      "text_number": 82,
       "source": "2009 - library",
       "pages": "5",
       "original_text": "System documentation is library-specific and follows standard formats for technical documentation. Documentation is specific to the particular version of the software in use at library. Documentation is web-based, indexed, organized by function, and easily searchable.",
@@ -1336,8 +2760,8 @@
       ]
     },
     {
-      "text_id": "43", 
-      "text_number": 43,
+      "text_id": "83", 
+      "text_number": 83,
       "source": "1995 - gemini",
       "pages": "58",
       "original_text": "Quantitative maintenance requirements will be allocated to the system, subsystems, and each component. The requirements must be achievable and stated in such a way that verification is permitted. The requirements will be expressed as: A: Mean Time to Repair for each maintenance level. B: Maximum Time to Repair for each maintenance level. C: Preventative Maintenance hours per year.",
@@ -1356,8 +2780,8 @@
       ]
     },
     {
-      "text_id": "44", 
-      "text_number": 44,
+      "text_id": "84", 
+      "text_number": 84,
       "source": "1995 - gemini",
       "pages": "58",
       "original_text": "All Gemini Software must be designed with human engineering requirements under consideration.",
@@ -1376,8 +2800,8 @@
       ]
     },
     {
-      "text_id": "45", 
-      "text_number": 45,
+      "text_id": "85", 
+      "text_number": 85,
       "source": "0000 - cctns",
       "pages": "3",
       "original_text": "CCTNS V1.0 functionality is designed to focus on delivering value to IOs, records room staff and citizens within the broad crime investigation area. Based on the guiding principles stated above, nine different function blocks have been identified and the detailed functionality of each block was determined.",
@@ -1396,8 +2820,8 @@
       ]
     },
     {
-      "text_id": "46", 
-      "text_number": 46,
+      "text_id": "86", 
+      "text_number": 86,
       "source": "2009 - library",
       "pages": "3",
       "original_text": "1.8 User Documentation UD-1: The software developer shall provide complete data specifications for authority records, bibliographic records, order records, item records, hold/request records, and other records maintained or accessed by the System Administration Module. UD-2: The software developer shall provide a thorough high-level description of major processes, including bibliographic record import and export, validation of bibliographic records against internal and external authority sources, and standard reports.",
@@ -1416,8 +2840,8 @@
       ]
     },
     {
-      "text_id": "47", 
-      "text_number": 47,
+      "text_id": "87", 
+      "text_number": 87,
       "source": "0000 - cctns",
       "pages": "10",
       "original_text": "Making navigation self-descriptive: Navigation should be designed to help users understand where they are, where they have been and where they can go next. General guidance on achieving self-descriptiveness is given in ISO 9241-110.",
@@ -1436,8 +2860,8 @@
       ]
     },
     {
-      "text_id": "48", 
-      "text_number": 48,
+      "text_id": "88", 
+      "text_number": 88,
       "source": "0000 - cctns",
       "pages": "11",
       "original_text": "Text quality: The quality of textual content with respect to spelling and grammar should be sufficient so as not to impede readability.",
@@ -1456,8 +2880,8 @@
       ]
     },
     {
-      "text_id": "49", 
-      "text_number": 49,
+      "text_id": "89", 
+      "text_number": 89,
       "source": "2005 - microcare",
       "pages": "9",
       "original_text": "This section of the document is going to explain the functionalities of the system, its subsystems and how it is integrated and working together. During the system study, it was understood that the first pilot period, twenty thousand vouchers will be sold, but the VMU-system has the provision to upgrade to meet the additional market and projects needs.",
@@ -1476,8 +2900,8 @@
       ]
     },
     {
-      "text_id": "50", 
-      "text_number": 50,
+      "text_id": "90", 
+      "text_number": 90,
       "source": "2005 - microcare",
       "pages": "14",
       "original_text": "The sales team master is for the future development of this program, if this program is extended to a country-wide network, this master will help understand and tack sales information.",
@@ -1496,8 +2920,8 @@
       ]
     },
     {
-      "text_id": "51", 
-      "text_number": 51,
+      "text_id": "91", 
+      "text_number": 91,
       "source": "2007 - eirene fun 7",
       "pages": "13",
       "original_text": "The EIRENE Functional Requirements Specification defines the requirements of a radio system satisfying the mobile communications needs of the European railways1. It encompasses ground-train voice and data communications, together with the groundbased mobile communications needs of trackside workers, station and depot staff and railway administrative and managerial personnel.",
@@ -1516,8 +2940,8 @@
       ]
     },
     {
-      "text_id": "52", 
-      "text_number": 52,
+      "text_id": "92", 
+      "text_number": 92,
       "source": "2007 - eirene fun 7",
       "pages": "13",
       "original_text": "The scope of this specification is to provide interoperability for trains and staff crossing national or other borders between systems, and to provide manufacturing economies of scale wherever practical.",
@@ -1536,8 +2960,8 @@
       ]
     },
     {
-      "text_id": "53", 
-      "text_number": 53,
+      "text_id": "93", 
+      "text_number": 93,
       "source": "2007 - eirene fun 7",
       "pages": "23",
       "original_text": "It may be necessary to supplement this Functional Requirements Specification with special requirements for supporting the train control application. Further information on the communications requirements to support ERTMS can be found in the Summary of ERTMS Communication Requirements document. ",
@@ -1556,8 +2980,8 @@
       ]
     },
     {
-      "text_id": "54", 
-      "text_number": 54,
+      "text_id": "94", 
+      "text_number": 94,
       "source": "0000 - gamma j",
       "pages": "6",
       "original_text": "CO-2: Compatibility is only tested and verified for Microsoft Internet Explorer version 6 and 7, Netscape Communicator Version 4 and 5. Other versions may not be 100% compatible. Also other browsers such as Mozilla or Firefox may not be 100% compatible.",
@@ -1576,8 +3000,8 @@
       ]
     },
     {
-      "text_id": "55", 
-      "text_number": 55,
+      "text_id": "95", 
+      "text_number": 95,
       "source": "2009 - library",
       "pages": "21",
       "original_text": "1.4 Document Conventions   The SRS includes requirements. Requirements include a reference to a process flowchart where appropriate. Flowcharts generally indicate the current approach to System Administration at King County Library System, and should be considered to give contextual information rather than to prescribe or constrain new software development.",
@@ -1596,8 +3020,8 @@
       ]
     },
     {
-      "text_id": "56", 
-      "text_number": 56,
+      "text_id": "96", 
+      "text_number": 96,
       "source": "0000 - gamma j",
       "pages": "22",
       "original_text": "The system shall be easy to use. The system shall be easy to learn.",
@@ -1616,11 +3040,11 @@
       ]
     },
     {
-      "text_id": "57", 
-      "text_number": 57,
+      "text_id": "97", 
+      "text_number": 97,
       "source": "2005 - phin",
       "pages": "16",
-      "original_text": "Privacy requirements ensure that sensitive information is not accessibly to unauthorized uses. Privacy requirements are broadly defined because they span all PHIN functional areas. These requirements should be reviewed in PHIN Preparedness Cross Functional Components Requirements, available at www.cdc.gov/phin",
+      "original_text": "Privacy requirements are broadly defined because they span all PHIN functional areas. These requirements should be reviewed in PHIN Preparedness Cross Functional Components Requirements, available at www.cdc.gov/phin",
       "numberOfRequirements": 0,
       "requirements": [
         {
@@ -1636,8 +3060,8 @@
       ]
     },
     {
-      "text_id": "58", 
-      "text_number": 58,
+      "text_id": "98", 
+      "text_number": 98,
       "source": "2009 - video search",
       "pages": "8",
       "original_text": "Our development team must thoroughly investigate each website within our database each month, to ensure that no illegal or harmful content is exposed to our users.",
@@ -1656,8 +3080,8 @@
       ]
     },
     {
-      "text_id": "59", 
-      "text_number": 59,
+      "text_id": "99", 
+      "text_number": 99,
       "source": "2009 - video search",
       "pages": "8",
       "original_text": "5.4 Legal Requirements  While all safety measures resulting from the site may not be fully identified, a recommendation of a full legal review of the software should be undertaken before the site is available to the public. In doing so, the site will be subject to full indemnification of liability. The system we produce will stay within all the legal requirements on our behalf.",
@@ -1676,8 +3100,8 @@
       ]
     },
     {
-      "text_id": "60", 
-      "text_number": 60,
+      "text_id": "100", 
+      "text_number": 100,
       "source": "2009 - video search",
       "pages": "7",
       "original_text": "It will give the software more flexibility and allows for easy and simple usage. This will appeal to both naive computer users and experienced computer users with a higher selling market.",
@@ -1694,5 +3118,388 @@
           ]
         }
       ]
+    },
+    {
+      "text_id": "101",
+      "text_number": 101,
+      "source": "2001 - esa",
+      "pages": "14",
+      "original_text": "Although the APAF data system and associated software will be developed with the highest quality possible, there are no requirements concerned with software quality. Some of the software quality factors that will be considered when developing the APAF data system include: reliability, maintainability, availability, flexibility, portability, testability, and usability.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "102",
+      "text_number": 102,
+      "source": "2001 - esa",
+      "pages": "9",
+      "original_text": "There are no installation-dependent requirements for the operation of the APAF data system. However, if any are identified, they shall be documented in the APAF Operations Procedures Document. The APAF data system will not impose hazards to personnel, property, or the environment. Therefore, there are no safety requirements of the APAF ground data system.",
+      "numberOfRequirements": 0,  
+      "requirements": [
+        {
+          "req_id": "req_1",
+          "category": "functional",
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "103",
+      "text_number": 103,
+      "source": "agentmom_2003",
+      "pages": "4",
+      "original_text": "Users who want to implement multi-agent systems based on this framework are expected to have general knowledge of Java programming, object-oriented programming and Multi-Agent Systems Engineering Methodology.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "104",
+      "text_number": 104,
+      "source": "caiso_2008",
+      "pages": "10",
+      "original_text": "The Real-time Grid Operators are trained at least annually for system restoration including the use of Black Start capable units. The training encompasses the integrated coordination of the following: NERC requirements, WECC requirements, E-501 System Restoration, E-501A Black Start Capable Units, Black Start Capability Plan, Simulations of full or partial system shutdowns and restoration.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "105",
+      "text_number": 105,
+      "source": "evla_back_2002",
+      "pages": "21",
+      "original_text": "Hardware \u2013 complete and comprehensible hardware systems specifications and configuration information shall be readily available. Software Coding Practices\u2013 software system and application code shall be well documented and written in a generally familiar language or languages (preferably not more than two). Software shall be written in a style that is easily readable and using practices that allow for minimal confusion.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "106",
+      "text_number": 106,
+      "source": "2004 - colorcast",
+      "pages": "5",
+      "original_text": "We assume that the application will only be in use for duration of the wide-installation of the software and hardware, as defined in this document, that is required for installation of the server component and use of the client application. We assume that finding the nearest colors in the red-green-blue color space will always give acceptably similar colors to the given color for the purpose of color search.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },  
+    {
+      "text_id": "107",
+      "text_number": 107,
+      "source": "gamma_j_0000",
+      "pages": "4",
+      "original_text": "This document is intended to flush out the requirements by the customer GAMMA-J. The customer can review this document to ensure their needs along with the needs of their user's are being met in their new Web Store program. The development team will also use this document for guidance on overall design and implementation of the Web Store system. The test and verification team can reference this to ensure the requirements are being meet for the customer. Finally, the tech writer will use this to assist with user documentation. This document is designed to be review from beginning to end; however, readers who are new to technical documentation may want to refer to Appendix E: Data Dictionary first.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "108",
+      "text_number": 108,
+      "source": "hats_2001",
+      "pages": "6",
+      "original_text": "The purpose of the Software Requirements Specification (SRS) is to clearly and precisely describe the requirements of the software system being developed, hereafter referred to as the HATS-GUI. The HATS-GUI is a Graphical User Interface (GUI) for the High Assurance Transformation System (HATS). This document shall serve as a reference guide to the developer for software design, implementation, and maintenance.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "109",
+      "text_number": 109,
+      "source": "hats_2001",
+      "pages": "6",
+      "original_text": "The SRS divides the system requirements into two major sections, behavioral requirements and non-behavioral requirements. Behavioral requirements describe the interaction between the system and its environment. Non-behavioral requirements are the ones that relate to the definition of the attributes of the product as it performs its functions.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "110",
+      "text_number": 110,
+      "source": "hats_2001",
+      "pages": "6",
+      "original_text": "The intended audience of this document is Dr. Winter, the Guidance Team, and the software development team. The SRS is an agreement on requirements between these parties regarding the software to be developed.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "111",
+      "text_number": 111,
+      "source": "space_fractions_2001",
+      "pages": "3",
+      "original_text": "The target clients for our software are students in the sixth grade and their teacher. These students are in the process of learning how to solve arithmetic problems involving fractions. Moreover, these students (as well as the teacher) are assumed to have basic computer and Internet skills that will enable them to use this software.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "112",
+      "text_number": 112,
+      "source": "space_fractions_2001",
+      "pages": "3",
+      "original_text": "This document is designed to provide information to both the client and the technical designers of the software. Section one is a brief overview of the product, including definitions and references. The definitions section is intended to assist the technical designers as well as the client in clarifying the terms used throughout the document. Section two is a general description of the product requirements from a user's perspective. This section includes information such as functional and data requirements, general constraints, and assumptions. Section three is a detailed requirements specification targeted toward technical designers. Specific requirements and expectations regarding the components of the product are given in this portion of the SRS document.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "113",
+      "text_number": 113,
+      "source": "vub_2008",
+      "pages": "3",
+      "original_text": "Abstract This document contains the Software Requirements Specification (SRS) for a Publications Management System (PMS). It describes the requirements of the project and tries to follow the IEEE-standard for SRS-documents, IEEE Std 830-1998 [1], as closely as possible. This project is part of the course Software Engineering [2] teached by Prof. Dr. Dirk Vermeir at the Free University of Brussels.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "114",
+      "text_number": 114,
+      "source": "vub_2008",
+      "pages": "8",
+      "original_text": "1.3 Definitions, Acronyms and Abbreviations Customer: The person, or persons, who pay for the product and usually (but not necessarily) decide the requirements. In the context of this recommended practice the customer and the supplier may be members of the same organization. Supplier: The person, or persons, who produce a product for a customer. In the context of this recommended practice, the customer and the supplier may be members of the same organization. User: The person, or persons, who operate or interact directly with the product.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "115",
+      "text_number": 115,
+      "source": "warc_iii_2009",
+      "pages": "4",
+      "original_text": "Participating institutions are: Denmark (Netarchive.dk) will contribute at the testing level, will use a copy of some of their data as test data. Happy with the specification to date, but wish to be kept informed of changes and developments. Norway (NL) - will contribute through testing and collaborating, based on their own plans to convert their web-archive to WARC (approximately 2,000,000,000 URLs). UK (BL) will contribute both at the requirement specification and testing stages of the project, possibly using their selective archive as test data.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "116",
+      "text_number": 116,
+      "source": "1995 - gemini",
+      "pages": "15",
+      "original_text": "Software development and maintenance staff intervene when there is a major problem to be solved or an upgrade to be installed. They also perform system generation and installation of new software packages or new releases, according to established test and validation procedures.",
+      "numberOfRequirements": 0,
+      "requirements":[
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "117",
+      "text_number": 117,
+      "source": "1995 - gemini",
+      "pages": "12",
+      "original_text": "This document draws heavily in form and general content from ESO's VLT Software Requirements Specification, Issue 1.0 (VLT- SPE-ESO-10000-11).",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "118",
+      "text_number": 118,
+      "source": "2004 - colorcast",
+      "pages": "11",
+      "original_text": "ColorKast recommends that ABC Paint apply their conventional business processes and security regimen to granting administrative access to the new system.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+         "req_id": null,
+         "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+          "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "119",
+      "text_number": 119,
+      "source": "2004 - colorcast",
+      "pages": "11",
+      "original_text": "Questions of application correctness come to light with respect to the accurate display of color samples on the target client computer. In the enterprise environment, we can assume that the kiosk or employee computer will have a correctly calibrated display device. In the consumer market, we cannot make this same assumption.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+           "alternatives": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "text_id": "120",
+      "text_number": 120,
+      "source": "2004 - colorcast",
+      "pages": "7",
+      "original_text": "HTTP version 1.0 is a well founded and highly supported protocol. Now considered legacy by some organizations, we believe this is a safe foundation for the product.",
+      "numberOfRequirements": 0,
+      "requirements": [
+        {
+          "req_id": null,
+          "category": null,
+          "furtherSpecialisation": null,
+          "gold_reference": null,
+           "alternatives": [
+            null
+          ]
+        }
+      ]
     }
+
   ]

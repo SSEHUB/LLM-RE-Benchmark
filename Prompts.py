@@ -7,6 +7,7 @@ def build_prompt(text: str):
     
     Context: The following text excerpt is taken from a requirements document and may contain information relevant to functional requirements.
     In the context of requirements engineering, functional requirements can be defined as follows: "{funcReq}"
+    Information that provides background information, rationales, or contextual explanations of system functionality, but does not describe the system functionality itself, is not considered part of a requirement.
 
     Process the following text excerpt according to the instruction.
     Text excerpt: "{text}"

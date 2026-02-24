@@ -128,7 +128,7 @@ def print_statistics():
 
 def print_groupwise_statistics(df: pd.DataFrame):
     """
-    Gibt gruppierte Durchschnittswerte für definierte Textgruppen (1–20, 21–40, 41–60) aus.
+    Gibt gruppierte Durchschnittswerte für definierte Textgruppen (alt: 1–20, 21–40, 41–60; neu: 1-40, 41-80, 81-120) aus.
     """
 
     # Gruppenspalte hinzufügen
@@ -173,11 +173,11 @@ def print_groupwise_statistics(df: pd.DataFrame):
 
 def assign_group(text_id: str) -> str:
     number = int(text_id)
-    if 1 <= number <= 20:
+    if 1 <= number <= 40:
         return 1
-    elif 21 <= number <= 40:
+    elif 41 <= number <= 80:
         return 2
-    elif 41 <= number <= 60:
+    elif 81 <= number <= 120:
         return 3
     else:
         return 4

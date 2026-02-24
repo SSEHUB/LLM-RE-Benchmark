@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+import seaborn as sns
 import matplotlib.colors as mcolors
 import numpy as np
 import EvaluateJSON
@@ -136,7 +137,9 @@ def analysis_data(results_per_textsegment_of_all_runs: dict, json_file: str):
     plot_benchmark_bar_chart_by_metric_grouped_by_metric()
     plot_benchmark_bar_chart_precision_recall_by_metric_only_precision_recall()
     plot_benchmark_bar_chart_precision_recall_by_reasoning_category()
-    plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category()
+    plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category() #hier wird immer ein Fehler geworfen, wenn nur ein Modell ausgewertet wird
+    plot_boxplot_precision_recall_f1_per_model()
+    plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category_from_runs()
 
 
 
@@ -887,8 +890,8 @@ def plot_line_chart_precision_recall_f1score_over_threshold_per_model():
     # LaTeX-Stil (Helvetica) aktivieren
     mpl.rcParams.update({
         "text.usetex": True,
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Helvetica"],
+        "font.family": "serif",
+        "font.sans-serif": ["cmr"],
         "axes.unicode_minus": False
     })
 
@@ -913,6 +916,7 @@ def plot_line_chart_precision_recall_f1score_over_threshold_per_model():
     # Liniendiagramme für jede Metrik & jedes Modell
     for model in models:
         df_model = df[df["model"] == model]
+        df_model = df_model[df_model["metric_score_threshold"] >= 0.75] #filtert den Wertebereich ab 0.70
         thresholds = df_model["metric_score_threshold"]
 
         for metric in metrics:
@@ -928,14 +932,14 @@ def plot_line_chart_precision_recall_f1score_over_threshold_per_model():
             )
 
     # X-Achse: Einheitlich und typografisch konsistent
-    x_ticks = np.arange(0.65, 1.01, 0.05)
+    x_ticks = np.arange(0.75, 1.01, 0.05)
     ax.set_xticks(x_ticks)
-    ax.set_xticklabels([rf"\textsf{{{t:.2f}}}" for t in x_ticks], fontsize=19)
+    ax.set_xticklabels([f"{t:.2f}" for t in x_ticks], fontsize=32)
 
     # Y-Achse: 0–1.05, typografisch konsistent
     ax.set_ylim(0, 1.05)
     ax.set_yticks(np.linspace(0, 1.0, 6))
-    ax.set_yticklabels([rf"\textsf{{{t:.1f}}}" for t in np.linspace(0, 1.0, 6)], fontsize=19)
+    ax.set_yticklabels([f"{t:.1f}" for t in np.linspace(0, 1.0, 6)], fontsize=32)
 
     # ax.set_yticks(np.linspace(0.5, 1.0, 3))
     # ax.set_yticks(np.linspace(0.5, 1.0, 3))
@@ -953,7 +957,7 @@ def plot_line_chart_precision_recall_f1score_over_threshold_per_model():
     ax.spines["bottom"].set_visible(True)
 
     # Achsen-Ticks-Stil
-    ax.tick_params(left=False, bottom=False, labelsize=18)
+    ax.tick_params(left=False, bottom=False, labelsize=32)
 
     # Gitterlinie Y-Achse
     ax.grid(axis="y", linestyle="--", alpha=0.7)
@@ -961,13 +965,16 @@ def plot_line_chart_precision_recall_f1score_over_threshold_per_model():
     # Legende im gewohnten Stil
     ax.legend(
         loc="upper center",
-        bbox_to_anchor=(0.5, 1.12),
+        bbox_to_anchor=(0.47, 1.22),
         ncol=3,
         frameon=False,
         edgecolor="black",
         fancybox=False,
         framealpha=1.0,
-        fontsize=19
+        columnspacing=1.5,
+        handlelength=1.0,
+        handletextpad=0.4,
+        fontsize=32
     )
 
     # Export als Vektor
@@ -1320,8 +1327,8 @@ def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category():
     # LaTeX-Stil aktivieren (Helvetica)
     mpl.rcParams.update({
         "text.usetex": True,
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Helvetica"],
+        "font.family": "serif",
+        "font.sans-serif": ["cmr"],
         "axes.unicode_minus": False
     })
 
@@ -1337,12 +1344,15 @@ def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category():
     # Modelle sortiert nach Parameterrangfolge
     reasoning_models = ["qwen3:8b", "qwen3:14b", "gpt-oss:20b", "qwen3:32b", "gpt-oss:120b", "gpt-5"]
     non_reasoning_models = ["qwen2.5:7b", "qwen2.5:14b", "qwen2.5:32b", "gpt-4"]
-    models = non_reasoning_models + reasoning_models  # gewünschte Reihenfolge
+    #models = non_reasoning_models + reasoning_models  # gewünschte Reihenfolge
+
+    models_ordered = non_reasoning_models + reasoning_models
+    # Nur Modelle verwenden, die tatsächlich im DataFrame existieren
+    models = [m for m in models_ordered if m in df["model"].values]
 
     # Farbabstufungen vorbereiten
-    cmap_reasoning = plt.get_cmap("Greys")
+    cmap_reasoning = plt.get_cmap("Greens")
     cmap_non_reasoning = plt.get_cmap("Purples")
-
 
     colors_reasoning = {
         model: cmap_reasoning(0.3 + 0.45 * i / max(len(reasoning_models) - 1, 1))
@@ -1374,7 +1384,7 @@ def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category():
         for rect in bars:
             height = rect.get_height()
             ax.annotate(
-                rf"\textsf{{{height:.2f}}}",
+                f"{height:.2f}",
                 xy=(rect.get_x() + rect.get_width() / 2, height),
                 xytext=(0, 3),
                 textcoords="offset points",
@@ -1388,8 +1398,8 @@ def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category():
     ax.set_xticks(x)
     ax.set_xticklabels(
         # [rf"\textsf{{{m.capitalize()}}}" for m in metrics],
-        [rf"\textsf{{{m.capitalize()}}}" for m in metrics],
-        fontsize=20,
+        [rf"{m.capitalize()}" for m in metrics],
+        fontsize=23,
         # [r"\normalsize\textsf{{{}}}".format(m.capitalize()) for m in metrics],
         # fontsize=14,
         ha="center"
@@ -1397,16 +1407,16 @@ def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category():
 
     ax.legend(
         loc="upper center",
-        bbox_to_anchor=(0.48, 1.2),
+        bbox_to_anchor=(0.48, 1.25),
         ncol=5,
         frameon=False,
         edgecolor="black",
         fancybox=False,
         framealpha=1.0,
-        fontsize=20,
-        columnspacing=1.2,
-        handlelength=1.7,      # Länge des Farbkästchens (kleiner = kompakter)
-        handletextpad=0.4      # Abstand zwischen Farbkästchen und Text reduzieren
+        fontsize=23,
+        columnspacing=0.7,
+        handlelength=1.25,      # Länge des Farbkästchens (kleiner = kompakter)
+        handletextpad=0.2      # Abstand zwischen Farbkästchen und Text reduzieren
     )
 
     ax.set_ylim(0, 1.05)
@@ -1416,13 +1426,11 @@ def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category():
     ax.spines["left"].set_visible(True)
     ax.spines["bottom"].set_visible(True)
 
-    ax.tick_params(left=False, bottom=False, labelsize=18)
+    ax.tick_params(left=False, bottom=False, labelsize=23)
     yticks = ax.get_yticks()
     ax.set_yticklabels(
-        [rf"\textsf{{{t:.1f}}}" for t in yticks], 
-        fontsize=20
-        # [r"\normalsize\textsf{{{:.1f}}}".format(t) for t in yticks],
-        # fontsize=14
+        [f"{t:.1f}" for t in yticks], 
+        fontsize=23
     )
     ax.grid(axis="y", linestyle="--", alpha=0.7)
 
@@ -1434,7 +1442,194 @@ def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category():
     print(f"\n✅ Balkendiagramm (Precision & Recall, Reasoning vs. Non-Reasoning Modelle) gespeichert unter: {save_path}")
 
 
+def plot_boxplot_precision_recall_f1_per_model():
+    """
+    Erstellt ein Boxplot-Diagramm der Verteilungen von Precision, Recall und F1-Score
+    für jedes Modell basierend auf allen Einzel-Runs.
+    """
+    global benchmark_results_each_runs
 
+    if not benchmark_results_each_runs:
+        print("⚠️ Keine Benchmark-Ergebnisse verfügbar.")
+        return
+
+    # LaTeX Schriftstil setzen (Computer Modern Roman)
+    mpl.rcParams.update({
+        "text.usetex": True,
+        "font.family": "serif",
+        "font.sans-serif": ["cmr"],
+        "axes.unicode_minus": False
+    })
+
+    # DataFrame erstellen
+    df = pd.DataFrame.from_dict(benchmark_results_each_runs, orient="index")
+
+    # Daten umstrukturieren (Long-Format für seaborn)
+    df_long = pd.melt(
+        df,
+        id_vars=["model"],
+        value_vars=["precision", "recall", "f1_score"],
+        var_name="metric",
+        value_name="score"
+    )
+
+    # Plot
+    plt.figure(figsize=(14, 7))
+    sns.boxplot(
+        data=df_long,
+        x="metric",
+        y="score",
+        hue="model",
+        width=0.6,
+        fliersize=2,  # Größe der Ausreißer
+        linewidth=1
+    )
+
+    plt.ylim(0, 1.05)
+    plt.grid(axis="y", linestyle="--", alpha=0.6)
+    plt.legend(bbox_to_anchor=(1.02, 1), loc="upper left", frameon=False, fontsize=11)
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
+    plt.xlabel("")
+    plt.ylabel("")
+
+    plt.tight_layout()
+    plt.savefig("boxplot_precision_recall_f1_per_model.png", dpi=300)
+    plt.savefig("boxplot_precision_recall_f1_per_model.pdf")
+    #plt.show()
+
+    print("\n✅ Boxplot Diagramm gespeichert unter: boxplot_precision_recall_f1_per_model.*")
+
+
+def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category_from_runs():
+    import matplotlib.pyplot as plt
+    import matplotlib as mpl
+    import numpy as np
+    import pandas as pd
+
+    save_path = "benchmark_bar_chart_precision_recall_f1score_reasoning_split_from_runs.png"
+    global benchmark_results_each_runs
+
+    # LaTeX-Stil aktivieren (Computer Modern)
+    mpl.rcParams.update({
+        "text.usetex": True,
+        "font.family": "serif",
+        "font.sans-serif": ["cmr"],
+        "axes.unicode_minus": False
+    })
+
+    # Daten vorbereiten
+    df = pd.DataFrame.from_dict(benchmark_results_each_runs, orient="index")
+
+    # Gruppieren nach Modell
+    grouped = df.groupby("model")[["precision", "recall", "f1_score"]]
+    summary = grouped.agg(["mean", "min", "max"])  # Erweiterbar: , "min", "max"
+    #summary.columns = summary.columns.droplevel(1)  # Mehrstufigen Index flach machen
+
+    metrics = ["precision", "recall", "f1_score"]
+    models = summary.index.tolist()
+    x = np.arange(len(metrics))
+    bar_width = 0.8 / len(models)
+    fig, ax = plt.subplots(figsize=(12, 6))
+    spacing = 0.02
+
+    # Modelle sortiert nach Parameterrangfolge
+    reasoning_models = ["qwen3:8b", "qwen3:14b", "gpt-oss:20b", "qwen3:32b", "gpt-oss:120b", "gpt-5"]
+    non_reasoning_models = ["qwen2.5:7b", "qwen2.5:14b", "qwen2.5:32b", "gpt-4"]
+    models_ordered = non_reasoning_models + reasoning_models
+    summary = summary.loc[[m for m in models_ordered if m in summary.index]]  # Filter & Sortierung
+
+    # Farbabstufungen vorbereiten
+    cmap_reasoning = plt.get_cmap("Greens")
+    cmap_non_reasoning = plt.get_cmap("Purples")
+
+    colors_reasoning = {
+        model: cmap_reasoning(0.3 + 0.45 * i / max(len(reasoning_models) - 1, 1))
+        for i, model in enumerate(reasoning_models)
+    }
+
+    colors_non_reasoning = {
+        model: cmap_non_reasoning(0.3 + 0.45 * i / max(len(non_reasoning_models) - 1, 1))
+        for i, model in enumerate(non_reasoning_models)
+    }
+
+    all_colors = {**colors_reasoning, **colors_non_reasoning}
+
+    for i, model in enumerate(summary.index):
+        mean_values = [summary.loc[model][(metric, "mean")] for metric in metrics]
+        min_values  = [summary.loc[model][(metric, "min")]  for metric in metrics]
+        max_values  = [summary.loc[model][(metric, "max")]  for metric in metrics]
+
+        neg_errors = np.array(mean_values) - np.array(min_values)
+        pos_errors = np.array(max_values) - np.array(mean_values)
+
+        yerr = np.vstack([neg_errors, pos_errors])
+
+        positions = x + (i - (len(summary.index) - 1) / 2) * bar_width + (spacing / 2) * (i - 1)
+
+        bars = ax.bar(
+            positions,
+            mean_values,
+            width=bar_width,
+            label=model,
+            color=all_colors.get(model, "#999999"),
+            yerr = yerr,
+            error_kw=dict(elinewidth=0.8, capsize=4, ecolor="black")
+        )
+
+        # Werte oberhalb der Balken
+        for rect in bars:
+            height = rect.get_height()
+            ax.annotate(
+                f"{height:.2f}",
+                xy=(rect.get_x() + rect.get_width() / 2, height),
+                xytext=(0, -20),
+                textcoords="offset points",
+                ha="center",
+                va="center",
+                fontsize=9,
+                fontweight="bold"
+            )
+
+    # Achsen & Legende
+    ax.set_xticks(x)
+    ax.set_xticklabels(
+        [f"{m.capitalize()}" for m in metrics],
+        fontsize=18,
+        ha="center"
+    )
+
+    ax.legend(
+        loc="upper center",
+        bbox_to_anchor=(0.48, 1.25),
+        ncol=5,
+        frameon=False,
+        edgecolor="black",
+        fancybox=False,
+        framealpha=1.0,
+        fontsize=18,
+        columnspacing=0.7,
+        handlelength=1.25,
+        handletextpad=0.2
+    )
+
+    ax.set_ylim(0, 1.05)
+    ax.set_yticks(np.linspace(0, 1.0, 6))
+    ax.set_yticklabels([f"{t:.1f}" for t in np.linspace(0, 1.0, 6)], fontsize=23)
+    ax.tick_params(left=False, bottom=False, labelsize=18)
+
+    ax.spines["top"].set_visible(True)
+    ax.spines["right"].set_visible(True)
+    ax.spines["left"].set_visible(True)
+    ax.spines["bottom"].set_visible(True)
+    ax.grid(axis="y", linestyle="--", alpha=0.7)
+
+    # Export
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=300)
+    plt.savefig("benchmark_bar_chart_precision_recall_f1score_reasoning_split_from_runs.pdf")
+
+    print(f"\n✅ Balkendiagramm (Precision, Recall, F1 über Runs) gespeichert unter: {save_path}")
 
 
 
@@ -1461,7 +1656,7 @@ def load_csv_and_renumber_run_ids(csv_path, chunk_size):
         print("⚠️ CSV-Datei ist leer.")
         return {}
 
-    # Neue run_ids berechnen: 60 Zeilen pro Block
+    # Neue run_ids berechnen: 120 Zeilen pro Block
     df["run_id"] = [(i // chunk_size) + 1 for i in range(len(df))]
 
     # In Dictionary umwandeln
@@ -1503,11 +1698,12 @@ def load_results_dict_from_csv(csv_path: str) -> dict:
 def main():
 
     #csv_file = "results_per_textsegment.csv"  # Adjust the path if necessary
-    csv_file = "cumulative_results_per_textsegment_final_version.csv"
+    csv_file = "cumulative_results_per_textsegment.csv"  # Adjust the path if necessary
+    #csv_file = "cumulative_results_per_textsegment_final_version.csv"
     json_file = "BenchmarkRequirements.json"
 
     #results_per_textsegment_of_all_runs = load_results_dict_from_csv(csv_file)
-    results_per_textsegment_of_all_runs = load_csv_and_renumber_run_ids(csv_file, 60)
+    results_per_textsegment_of_all_runs = load_csv_and_renumber_run_ids(csv_file, 120)
     #results_per_textsegment_of_all_runs = load_csv_and_renumber_run_ids("results_per_textsegment_analysis_threshold.csv", 60)
 
     analysis_data(results_per_textsegment_of_all_runs, json_file)
