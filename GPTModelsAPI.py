@@ -15,7 +15,7 @@ def run_gpt_openai(prompt: str, gptmodel: str) -> str:
     """
     try:
         response = client.chat.completions.create(
-            model=gptmodel,  # "gpt-4", je nach gewünschtem Modell
+            model=gptmodel,  # "gpt-4", depending on the desired model
             messages=[
                 {
                     "role": "user", 

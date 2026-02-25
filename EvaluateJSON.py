@@ -4,14 +4,14 @@ import re
 
 from typing import List, Dict, Set
 
-# Ergebnis-Dictionary
+# result-dictionary
 text_analysis_results = {}
 
 
 
 def count_words(text: str) -> int:
     """
-    Zählt die Anzahl der Wörter in einem gegebenen Text.
+    Counts the number of words in a given text.
     """
     if not text:
         return 0
@@ -21,7 +21,7 @@ def count_words(text: str) -> int:
 
 def count_characters(text: str) -> int:
     """
-    Zählt die Anzahl der Zeichen in einem gegebenen Text.
+    Counts the number of characters in a given text.
     """
     if not text:
         return 0
@@ -31,7 +31,7 @@ def count_characters(text: str) -> int:
 
 def count_reference_words(requirements: Dict[str, Dict]) -> int:
     """
-    Summiert die Wortanzahl aller 'gold_reference'-Texte eines Textausschnitts.
+    Adds up the word count of all gold_reference texts in a text excerpt.
     """
     return sum(count_words(req_data["gold_reference"]) for req_data in requirements.values() if req_data["gold_reference"])
 
@@ -60,11 +60,11 @@ def evaluate_dataset(json_file: str):
         length_category = determine_length_category(num_words)
 
 
-        # Verhältnisberechnungen
+        # ratio calculations
         ratio_reference_to_total = reference_words / num_words if num_words > 0 else 0
         ratio_nonref_to_total = non_reference_words / num_words if num_words > 0 else 0
 
-        # Ergebnisse in dictionary speichern
+        # Save results in dictionary
         text_analysis_results[text_id] = {
             "source": entry["source"],
             "pages": entry["pages"],
@@ -84,7 +84,7 @@ def evaluate_dataset(json_file: str):
 
 def determine_length_category(num_words: int) -> int:
     """
-    Bestimmt die Längenkategorie basierend auf der Wortanzahl des Textes.
+    Determines the length category based on the number of words in the text.
     """
     if num_words < 10:
         return 0
@@ -96,48 +96,48 @@ def determine_length_category(num_words: int) -> int:
 
 
 def print_statistics():
-    """Gibt grundlegende Statistiken über alle analysierten Textsegmente aus."""
+    """Provides basic statistics on all analyzed text segments."""
     if not text_analysis_results:
-        print("⚠️ Keine Analyseergebnisse vorhanden.")
+        print("⚠️ No analysis results available.")
         return
 
     df = pd.DataFrame.from_dict(text_analysis_results, orient="index")
 
-    print("\n📊 Statistische Übersicht über alle Textsegmente:\n")
+    print("\n📊 Statistical overview of all text segments:\n")
 
-    print(f"🔢 Anzahl analysierter Textsegmente:      {len(df)}")
-    print(f"📝 Gesamtanzahl Zeichen (original_text):  {df['num_chars'].sum()}")
-    print(f"📝 Gesamtanzahl Wörter (original_text):   {df['num_words'].sum()}")
-    print(f"🧩 Gesamtanzahl Referenzen:               {df['num_references'].sum()}")
-    print(f"🧩 Gesamtanzahl Referenz-Wörter:          {df['reference_words'].sum()}")
-    print(f"📉 Gesamtanzahl Nicht-Referenz-Wörter:    {df['non_reference_words'].sum()}")
+    print(f"🔢 Number of text segments analyzed:           {len(df)}")
+    print(f"📝 Total number of characters (original_text): {df['num_chars'].sum()}")
+    print(f"📝 Total number of words (original_text):      {df['num_words'].sum()}")
+    print(f"🧩 Total number of references:                 {df['num_references'].sum()}")
+    print(f"🧩 Total number of reference words:            {df['reference_words'].sum()}")
+    print(f"📉 Total number of non-reference words:        {df['non_reference_words'].sum()}")
 
-    print("\n📈 Durchschnittswerte pro Textsegment:")
-    print(f"➡️ Zeichen:              {df['num_chars'].mean():.2f}")
-    print(f"➡️ Wörter:               {df['num_words'].mean():.2f}")
-    print(f"➡️ Referenzen:           {df['num_references'].mean():.2f}")
-    print(f"➡️ Referenz-Wörter:      {df['reference_words'].mean():.2f}")
-    print(f"➡️ Nicht-Referenz-Wörter:{df['non_reference_words'].mean():.2f}")
+    print("\n📈 Average values per text segment:")
+    print(f"➡️ Characters:           {df['num_chars'].mean():.2f}")
+    print(f"➡️ Words:                {df['num_words'].mean():.2f}")
+    print(f"➡️ References:           {df['num_references'].mean():.2f}")
+    print(f"➡️ Reference words:      {df['reference_words'].mean():.2f}")
+    print(f"➡️ Non-reference words:  {df['non_reference_words'].mean():.2f}")
 
-    print("\n📏 Min/Max-Werte (zur Orientierung):")
-    print(f"📏 Kürzester Text (Wörter):   {df['num_words'].min()} | Längster Text: {df['num_words'].max()}")
-    print(f"🔢 Wenigste Referenzen:       {df['num_references'].min()} | Meiste: {df['num_references'].max()}")
-    print(f"✂️ Geringste Ref-Wörter:      {df['reference_words'].min()} | Meiste: {df['reference_words'].max()}")
+    print("\n📏 Min/Max values:")
+    print(f"📏 Shortest text (words):   {df['num_words'].min()} | Longest text: {df['num_words'].max()}")
+    print(f"🔢 Fewest reference:       {df['num_references'].min()} | Most: {df['num_references'].max()}")
+    print(f"✂️ Fewest ref words:      {df['reference_words'].min()} | Most: {df['reference_words'].max()}")
 
 
 
 def print_groupwise_statistics(df: pd.DataFrame):
     """
-    Gibt gruppierte Durchschnittswerte für definierte Textgruppen (alt: 1–20, 21–40, 41–60; neu: 1-40, 41-80, 81-120) aus.
+    Returns grouped average values for defined text groups (old: 1 to 20, 21 to 40, 41 to 60; new: 1 to 40, 41 to 80, 81 to 120).
     """
 
-    # Gruppenspalte hinzufügen
-    df["gruppe"] = df.index.map(assign_group)
+    # Add group column
+    df["group"] = df.index.map(assign_group)
 
-    grouped = df.groupby("gruppe")
+    grouped = df.groupby("group")
 
-    # Durchschnittswerte ausgeben
-    print("\n📊 Gruppierte Durchschnittswerte (Textausschnitt-Gruppen):\n")
+    # Output average values
+    print("\n📊 Grouped average values (text excerpt groups):\n")
     print(grouped[[
         "num_words",
         "num_references",
@@ -147,27 +147,27 @@ def print_groupwise_statistics(df: pd.DataFrame):
         "ratio_nonref_to_total"
     ]].mean().round(2))
 
-    # Vollständige Kennzahlen pro Gruppe
+    # Complete key figures per group
     for group_name, group_df in grouped:
-        print(f"\n📘 Gruppe {group_name} – detaillierte Kennzahlen:\n")
-        print(f"🔢 Anzahl Textsegmente:         {len(group_df)}")
-        print(f"📝 Gesamtanzahl Zeichen:       {group_df['num_chars'].sum()}")
-        print(f"📝 Gesamtanzahl Wörter:        {group_df['num_words'].sum()}")
-        print(f"🧩 Gesamtanzahl Referenzen:    {group_df['num_references'].sum()}")
-        print(f"🧩 Referenz-Wörter gesamt:     {group_df['reference_words'].sum()}")
-        print(f"📉 Nicht-Referenz-Wörter:      {group_df['non_reference_words'].sum()}")
+        print(f"\n📘 Group {group_name} – Detailed key figures:\n")
+        print(f"🔢 Number of text segments:         {len(group_df)}")
+        print(f"📝 Total number of characters:     {group_df['num_chars'].sum()}")
+        print(f"📝 Total number of words:          {group_df['num_words'].sum()}")
+        print(f"🧩 Total number of references:     {group_df['num_references'].sum()}")
+        print(f"🧩 Total reference words:          {group_df['reference_words'].sum()}")
+        print(f"📉 Non-reference words:            {group_df['non_reference_words'].sum()}")
 
-        print(f"\n📈 Durchschnittswerte:")
-        print(f"➡️ Zeichen:                    {group_df['num_chars'].mean():.2f}")
-        print(f"➡️ Wörter:                     {group_df['num_words'].mean():.2f}")
-        print(f"➡️ Referenzen:                 {group_df['num_references'].mean():.2f}")
-        print(f"➡️ Referenz-Wörter:            {group_df['reference_words'].mean():.2f}")
-        print(f"➡️ Nicht-Referenz-Wörter:      {group_df['non_reference_words'].mean():.2f}")
+        print(f"\n📈 Average values:")
+        print(f"➡️ Characters:                      {group_df['num_chars'].mean():.2f}")
+        print(f"➡️ Words:                           {group_df['num_words'].mean():.2f}")
+        print(f"➡️ References:                      {group_df['num_references'].mean():.2f}")
+        print(f"➡️ Reference words:                 {group_df['reference_words'].mean():.2f}")
+        print(f"➡️ Non-reference words:             {group_df['non_reference_words'].mean():.2f}")
 
-        print(f"\n📏 Min/Max-Werte:")
-        print(f"📏 Kürzester Text (Wörter):    {group_df['num_words'].min()} | Längster: {group_df['num_words'].max()}")
-        print(f"🔢 Wenigste Referenzen:        {group_df['num_references'].min()} | Meiste: {group_df['num_references'].max()}")
-        print(f"✂️ Geringste Ref-Wörter:       {group_df['reference_words'].min()} | Meiste: {group_df['reference_words'].max()}")
+        print(f"\n📏 Min/Max values:")
+        print(f"📏 Shortest text (words):         {group_df['num_words'].min()} | Longest: {group_df['num_words'].max()}")
+        print(f"🔢 Fewest references:             {group_df['num_references'].min()} | Most: {group_df['num_references'].max()}")
+        print(f"✂️ Fewest ref words:               {group_df['reference_words'].min()} | Most: {group_df['reference_words'].max()}")
 
 
 
@@ -186,137 +186,137 @@ def assign_group(text_id: str) -> str:
 
 def print_length_category_distribution(df: pd.DataFrame):
     """
-    Gibt die Verteilung der Textausschnitte über Wortanzahl-Kategorien aus (0–10), inkl. leerer Kategorien.
+    Outputs the distribution of text excerpts across word count categories (0 to 10), including empty categories.
     """
-    print("\n📐 Kategorisierung nach Textlänge (Wortanzahl):\n")
+    print("\n📐 Categorization by text length (number of words):\n")
 
-    # Alle möglichen Kategorien von 0 bis 10
+    # All possible categories from 0 to 10
     all_categories = pd.Series(0, index=range(0, 11))
 
-    # Tatsächliche Zählung
+    # Actual count
     actual_counts = df["length_category"].value_counts().sort_index()
 
-    # Fehlende Kategorien ergänzen mit 0
+    # Add missing categories with 0
     category_counts = all_categories.add(actual_counts, fill_value=0).astype(int)
 
-    # Ausgabe
+    # Output
     for category, count in category_counts.items():
         if category < 10:
-            print(f"🗂️ Kategorie {category} (Wörter {category*10}–{category*10+9}): {count} ")
+            print(f"🗂️ Category {category} (words {category*10} to {category*10+9}): {count} ")
         else:
-            print(f"🗂️ Kategorie {category} (Wörter ≥100): {count} ")
+            print(f"🗂️ Category {category} (words ≥100): {count} ")
 
 
 
 def print_length_category_distribution_by_group(df: pd.DataFrame):
     """
-    Gibt die Verteilung der Textlängen-Kategorien für jede definierte Gruppe (1–3) separat aus.
+    Outputs the distribution of text length categories separately for each defined group (1 to 3).
     """
-    print("\n📐 Kategorisierung nach Textlänge je Gruppe (Wortanzahl):\n")
+    print("\n📐 Categorization by text length per group (number of words):\n")
 
-    df["gruppe"] = df.index.map(assign_group)
+    df["group"] = df.index.map(assign_group)
 
-    for group in sorted(df["gruppe"].unique()):
-        group_df = df[df["gruppe"] == group]
-        print(f"\n🔹 Gruppe {group}:")
+    for group in sorted(df["group"].unique()):
+        group_df = df[df["group"] == group]
+        print(f"\n🔹 group {group}:")
 
-        # Kategorien: 0–10
+        # Category: 0–10
         all_categories = pd.Series(0, index=range(0, 11))
         actual_counts = group_df["length_category"].value_counts().sort_index()
         category_counts = all_categories.add(actual_counts, fill_value=0).astype(int)
 
         for category, count in category_counts.items():
             if category < 10:
-                print(f"🗂️ Kategorie {category} (Wörter {category*10}–{category*10+9}): {count} ")
+                print(f"🗂️ Category {category} (words {category*10} to {category*10+9}): {count} ")
             else:
-                print(f"🗂️ Kategorie {category} (Wörter ≥100): {count} ")
+                print(f"🗂️ Category {category} (words ≥100): {count} ")
 
 
 
 def export_full_summary_to_csv(df: pd.DataFrame):
     """
-    Exportiert alle Konsolenmetriken in eine strukturierte CSV-Datei.
+    Exports all console metrics to a structured CSV file.
     """
 
-    df["gruppe"] = df.index.map(assign_group)
+    df["group"] = df.index.map(assign_group)
     output_rows = []
 
-    # 🔢 Globale Gesamtwerte
-    output_rows.append({"Kategorie": "🔢 Anzahl analysierter Textsegmente", "Wert": len(df)})
-    output_rows.append({"Kategorie": "📝 Gesamtanzahl Zeichen (original_text)", "Wert": df['num_chars'].sum()})
-    output_rows.append({"Kategorie": "📝 Gesamtanzahl Wörter (original_text)", "Wert": df['num_words'].sum()})
-    output_rows.append({"Kategorie": "🧩 Gesamtanzahl Referenzen", "Wert": df['num_references'].sum()})
-    output_rows.append({"Kategorie": "🧩 Gesamtanzahl Referenz-Wörter", "Wert": df['reference_words'].sum()})
-    output_rows.append({"Kategorie": "📉 Gesamtanzahl Nicht-Referenz-Wörter", "Wert": df['non_reference_words'].sum()})
+    # 🔢 Global total values
+    output_rows.append({"Category": "🔢 Number of text segments analyzed", "Value": len(df)})
+    output_rows.append({"Category": "📝 Total number of words (original_text)", "Value": df['num_chars'].sum()})
+    output_rows.append({"Category": "📝 Total number of words (original_text)", "Value": df['num_words'].sum()})
+    output_rows.append({"Category": "🧩 Total number of references", "Value": df['num_references'].sum()})
+    output_rows.append({"Category": "🧩 Total number of reference words", "Value": df['reference_words'].sum()})
+    output_rows.append({"Category": "📉 Total number of non-reference words", "Value": df['non_reference_words'].sum()})
 
     output_rows.append({})
-    output_rows.append({"Kategorie": "📈 Durchschnittswerte pro Textsegment"})
-    output_rows.append({"Kategorie": "➡️ Zeichen", "Wert": round(df['num_chars'].mean(), 2)})
-    output_rows.append({"Kategorie": "➡️ Wörter", "Wert": round(df['num_words'].mean(), 2)})
-    output_rows.append({"Kategorie": "➡️ Referenzen", "Wert": round(df['num_references'].mean(), 2)})
-    output_rows.append({"Kategorie": "➡️ Referenz-Wörter", "Wert": round(df['reference_words'].mean(), 2)})
-    output_rows.append({"Kategorie": "➡️ Nicht-Referenz-Wörter", "Wert": round(df['non_reference_words'].mean(), 2)})
+    output_rows.append({"Category": "📈 Average values per text segment"})
+    output_rows.append({"Category": "➡️ Characters", "Value": round(df['num_chars'].mean(), 2)})
+    output_rows.append({"Category": "➡️ Words", "Value": round(df['num_words'].mean(), 2)})
+    output_rows.append({"Category": "➡️ References", "Value": round(df['num_references'].mean(), 2)})
+    output_rows.append({"Category": "➡️ Reference words", "Value": round(df['reference_words'].mean(), 2)})
+    output_rows.append({"Category": "➡️ Non-reference words", "Value": round(df['non_reference_words'].mean(), 2)})
 
     output_rows.append({})
-    output_rows.append({"Kategorie": "📏 Min/Max-Werte"})
-    output_rows.append({"Kategorie": "📏 Kürzester Text (Wörter)", "Wert": df['num_words'].min()})
-    output_rows.append({"Kategorie": "📏 Längster Text (Wörter)", "Wert": df['num_words'].max()})
-    output_rows.append({"Kategorie": "🔢 Wenigste Referenzen", "Wert": df['num_references'].min()})
-    output_rows.append({"Kategorie": "🔢 Meiste Referenzen", "Wert": df['num_references'].max()})
-    output_rows.append({"Kategorie": "✂️ Geringste Ref-Wörter", "Wert": df['reference_words'].min()})
-    output_rows.append({"Kategorie": "✂️ Meiste Ref-Wörter", "Wert": df['reference_words'].max()})
+    output_rows.append({"Category": "📏 Min/Max values"})
+    output_rows.append({"Category": "📏 Shortest text (words)", "Value": df['num_words'].min()})
+    output_rows.append({"Category": "📏 Longest text (words)", "Value": df['num_words'].max()})
+    output_rows.append({"Category": "🔢 Fewest References", "Value": df['num_references'].min()})
+    output_rows.append({"Category": "🔢 Most References", "Value": df['num_references'].max()})
+    output_rows.append({"Category": "✂️ Fewest ref words", "Value": df['reference_words'].min()})
+    output_rows.append({"Category": "✂️ Most ref words", "Value": df['reference_words'].max()})
 
-    # 📐 Kategorisierung nach Textlänge
+    # 📐 Categorization by text length
     output_rows.append({})
-    output_rows.append({"Kategorie": "📐 Kategorisierung nach Textlänge (Wortanzahl)"})
+    output_rows.append({"Category": "📐 Categorization by text length (number of words)"})
     category_counts = df['length_category'].value_counts().reindex(range(0, 11), fill_value=0).sort_index()
     for cat, count in category_counts.items():
         cat_range = f"{cat*10}–{cat*10+9}" if cat < 10 else "≥100"
-        output_rows.append({"Kategorie": f"🗂️ Kategorie {cat} (Wörter {cat_range})", "Wert": count})
+        output_rows.append({"Category": f"🗂️ Category {cat} (Words {cat_range})", "Value": count})
 
-    # 📊 Gruppierte Durchschnittswerte
-    grouped = df.groupby("gruppe")
+    # 📊 Grouped average values
+    grouped = df.groupby("group")
     output_rows.append({})
-    output_rows.append({"Kategorie": "📊 Gruppierte Durchschnittswerte"})
+    output_rows.append({"Category": "📊 Grouped average values"})
 
     for group, gdf in grouped:
         output_rows.append({})
-        output_rows.append({"Kategorie": f"📘 Gruppe {group} – Gesamtsummen"})
-        output_rows.append({"Kategorie": "Anzahl Textsegmente", "Wert": len(gdf)})
-        output_rows.append({"Kategorie": "Zeichen gesamt", "Wert": gdf['num_chars'].sum()})
-        output_rows.append({"Kategorie": "Wörter gesamt", "Wert": gdf['num_words'].sum()})
-        output_rows.append({"Kategorie": "Referenzen gesamt", "Wert": gdf['num_references'].sum()})
-        output_rows.append({"Kategorie": "Referenz-Wörter gesamt", "Wert": gdf['reference_words'].sum()})
-        output_rows.append({"Kategorie": "Nicht-Referenz-Wörter", "Wert": gdf['non_reference_words'].sum()})
+        output_rows.append({"Category": f"📘 Group {group} – Totals"})
+        output_rows.append({"Category": "Number of text segments", "Value": len(gdf)})
+        output_rows.append({"Category": "Total characters", "Value": gdf['num_chars'].sum()})
+        output_rows.append({"Category": "Total words", "Value": gdf['num_words'].sum()})
+        output_rows.append({"Category": "Total references", "Value": gdf['num_references'].sum()})
+        output_rows.append({"Category": "Total reference words", "Value": gdf['reference_words'].sum()})
+        output_rows.append({"Category": "Non-reference words", "Value": gdf['non_reference_words'].sum()})
 
-        output_rows.append({"Kategorie": f"📘 Gruppe {group} – Durchschnittswerte"})
-        output_rows.append({"Kategorie": "Ø Zeichen", "Wert": round(gdf['num_chars'].mean(), 2)})
-        output_rows.append({"Kategorie": "Ø Wörter", "Wert": round(gdf['num_words'].mean(), 2)})
-        output_rows.append({"Kategorie": "Ø Referenzen", "Wert": round(gdf['num_references'].mean(), 2)})
-        output_rows.append({"Kategorie": "Ø Ref-Wörter", "Wert": round(gdf['reference_words'].mean(), 2)})
-        output_rows.append({"Kategorie": "Ø NonRef-Wörter", "Wert": round(gdf['non_reference_words'].mean(), 2)})
+        output_rows.append({"Category": f"📘 Group {group} – Average values"})
+        output_rows.append({"Category": "Ø Characters", "Value": round(gdf['num_chars'].mean(), 2)})
+        output_rows.append({"Category": "Ø Words", "Value": round(gdf['num_words'].mean(), 2)})
+        output_rows.append({"Category": "Ø References", "Value": round(gdf['num_references'].mean(), 2)})
+        output_rows.append({"Category": "Ø Ref words", "Value": round(gdf['reference_words'].mean(), 2)})
+        output_rows.append({"Category": "Ø NonRef words", "Value": round(gdf['non_reference_words'].mean(), 2)})
 
-        output_rows.append({"Kategorie": "Ø Ref/Total", "Wert": f"{gdf['ratio_reference_to_total'].mean():.2%}"})
-        output_rows.append({"Kategorie": "Ø NonRef/Total", "Wert": f"{gdf['ratio_nonref_to_total'].mean():.2%}"})
+        output_rows.append({"Category": "Ø Ref/Total", "Value": f"{gdf['ratio_reference_to_total'].mean():.2%}"})
+        output_rows.append({"Category": "Ø NonRef/Total", "Value": f"{gdf['ratio_nonref_to_total'].mean():.2%}"})
 
-        output_rows.append({"Kategorie": f"📘 Gruppe {group} – Min/Max"})
-        output_rows.append({"Kategorie": "Kürzester Text (Wörter)", "Wert": gdf['num_words'].min()})
-        output_rows.append({"Kategorie": "Längster Text (Wörter)", "Wert": gdf['num_words'].max()})
-        output_rows.append({"Kategorie": "Min Referenzen", "Wert": gdf['num_references'].min()})
-        output_rows.append({"Kategorie": "Max Referenzen", "Wert": gdf['num_references'].max()})
-        output_rows.append({"Kategorie": "Min Ref-Wörter", "Wert": gdf['reference_words'].min()})
-        output_rows.append({"Kategorie": "Max Ref-Wörter", "Wert": gdf['reference_words'].max()})
+        output_rows.append({"Category": f"📘 Group {group} – Min/Max"})
+        output_rows.append({"Category": "Shortest text (words)", "Value": gdf['num_words'].min()})
+        output_rows.append({"Category": "Longest text (words)", "Value": gdf['num_words'].max()})
+        output_rows.append({"Category": "Min References", "Value": gdf['num_references'].min()})
+        output_rows.append({"Category": "Max References", "Value": gdf['num_references'].max()})
+        output_rows.append({"Category": "Min Ref Words", "Value": gdf['reference_words'].min()})
+        output_rows.append({"Category": "Max Ref Words", "Value": gdf['reference_words'].max()})
 
-        # Kategorie-Auswertung pro Gruppe
+        # Category evaluation per group
         group_categories = gdf['length_category'].value_counts().reindex(range(0, 11), fill_value=0).sort_index()
         for cat, count in group_categories.items():
             cat_range = f"{cat*10}–{cat*10+9}" if cat < 10 else "≥100"
-            output_rows.append({"Kategorie": f"🗂️ Gruppe {group} – Kategorie {cat} (Wörter {cat_range})", "Wert": count})
+            output_rows.append({"Category": f"🗂️ Group {group} – Category {cat} (Words {cat_range})", "Value": count})
 
     # Export
     summary_df = pd.DataFrame(output_rows)
     summary_df.to_csv("text_analysis_summary.csv", index=False)
-    print("\n📄 Ausführlicher Bericht wurde in 'text_analysis_summary.csv' gespeichert.")
+    print("\n📄 Detailed report saved in 'text_analysis_summary.csv'")
 
 
 
@@ -327,26 +327,26 @@ def main():
     json_file = "BenchmarkRequirements.json"  # Adjust the path if necessary
     evaluate_dataset(json_file)
 
-    # Ausgabe als DataFrame
+    # Output as DataFrame
     df = pd.DataFrame.from_dict(text_analysis_results, orient="index")
-    print("\n📊 Analyse abgeschlossen. Übersicht:\n")
+    print("\n📊 Analysis complete. Overview:\n")
     print(df)
 
-    # Optional: als CSV speichern
+    # Optional: Save as CSV
     df.to_csv("text_analysis_results.csv", index_label="text_id")
-    print("\n💾 Ergebnisse wurden in 'text_analysis_results.csv' gespeichert.")
+    print("\n💾 Results were saved in text_analysis_results.csv.")
 
-    # Statistikfunktion
+    # statistical function
     print_statistics()
     print_length_category_distribution(df)
 
-    # Gruppierte Auswertung
+    # grouped evaluation
     print_groupwise_statistics(df)
 
-    # Gruppierte Kategorisierung
+    # Grouped categorization
     print_length_category_distribution_by_group(df)
 
-    # Zusammenfassung in zweiter CSV-Datei
+    # Summary in second CSV file
     export_full_summary_to_csv(df)
 
 

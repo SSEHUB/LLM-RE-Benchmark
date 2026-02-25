@@ -33,5 +33,3 @@ def build_prompt(text: str):
 
 funcReq = """Functional requirements define a function to be provided by the system or a system component. They describe actions to be performed by a system independently as well as interactions of the system with human users or systems and requirements for general, functional agreements."""
 
-#funcReq = """Functional requirements are statements of services the system should provide, how the system should react to particular inputs and how the system should behave in particular situations. 
-#They specify the functionality of the system to be developed or a service to be provided."""

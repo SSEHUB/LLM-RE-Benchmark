@@ -1,139 +1,139 @@
-Kategorie,Wert
-🔢 Anzahl analysierter Textsegmente,120
-📝 Gesamtanzahl Zeichen (original_text),44575
-📝 Gesamtanzahl Wörter (original_text),7348
-🧩 Gesamtanzahl Referenzen,250
-🧩 Gesamtanzahl Referenz-Wörter,3962
-📉 Gesamtanzahl Nicht-Referenz-Wörter,3386
+Category,Value
+🔢 Number of text segments analyzed,120
+📝 Total number of words (original_text),44575
+📝 Total number of words (original_text),7348
+🧩 Total number of references,250
+🧩 Total number of reference words,3962
+📉 Total number of non-reference words,3386
 ,
-📈 Durchschnittswerte pro Textsegment,
-➡️ Zeichen,371.46
-➡️ Wörter,61.23
-➡️ Referenzen,2.08
-➡️ Referenz-Wörter,33.02
-➡️ Nicht-Referenz-Wörter,28.22
+📈 Average values per text segment,
+➡️ Characters,371.46
+➡️ Words,61.23
+➡️ References,2.08
+➡️ Reference words,33.02
+➡️ Non-reference words,28.22
 ,
-📏 Min/Max-Werte,
-📏 Kürzester Text (Wörter),12
-📏 Längster Text (Wörter),170
-🔢 Wenigste Referenzen,1
-🔢 Meiste Referenzen,7
-✂️ Geringste Ref-Wörter,0
-✂️ Meiste Ref-Wörter,114
+📏 Min/Max values,
+📏 Shortest text (words),12
+📏 Longest text (words),170
+🔢 Fewest References,1
+🔢 Most References,7
+✂️ Fewest ref words,0
+✂️ Most ref words,114
 ,
-📐 Kategorisierung nach Textlänge (Wortanzahl),
-🗂️ Kategorie 0 (Wörter 0–9),0
-🗂️ Kategorie 1 (Wörter 10–19),2
-🗂️ Kategorie 2 (Wörter 20–29),10
-🗂️ Kategorie 3 (Wörter 30–39),18
-🗂️ Kategorie 4 (Wörter 40–49),14
-🗂️ Kategorie 5 (Wörter 50–59),20
-🗂️ Kategorie 6 (Wörter 60–69),17
-🗂️ Kategorie 7 (Wörter 70–79),14
-🗂️ Kategorie 8 (Wörter 80–89),10
-🗂️ Kategorie 9 (Wörter 90–99),1
-🗂️ Kategorie 10 (Wörter ≥100),14
+📐 Categorization by text length (number of words),
+🗂️ Category 0 (Words 0–9),0
+🗂️ Category 1 (Words 10–19),2
+🗂️ Category 2 (Words 20–29),10
+🗂️ Category 3 (Words 30–39),18
+🗂️ Category 4 (Words 40–49),14
+🗂️ Category 5 (Words 50–59),20
+🗂️ Category 6 (Words 60–69),17
+🗂️ Category 7 (Words 70–79),14
+🗂️ Category 8 (Words 80–89),10
+🗂️ Category 9 (Words 90–99),1
+🗂️ Category 10 (Words ≥100),14
 ,
-📊 Gruppierte Durchschnittswerte,
+📊 Grouped average values,
 ,
-📘 Gruppe 1 – Gesamtsummen,
-Anzahl Textsegmente,40
-Zeichen gesamt,16720
-Wörter gesamt,2788
-Referenzen gesamt,85
-Referenz-Wörter gesamt,1566
-Nicht-Referenz-Wörter,1222
-📘 Gruppe 1 – Durchschnittswerte,
-Ø Zeichen,418.0
-Ø Wörter,69.7
-Ø Referenzen,2.12
-Ø Ref-Wörter,39.15
-Ø NonRef-Wörter,30.55
+📘 Group 1 – Totals,
+Number of text segments,40
+Total characters,16720
+Total words,2788
+Total references,85
+Total reference words,1566
+Non-reference words,1222
+📘 Group 1 – Average values,
+Ø Characters,418.0
+Ø Words,69.7
+Ø References,2.12
+Ø Ref words,39.15
+Ø NonRef words,30.55
 Ø Ref/Total,56.35%
 Ø NonRef/Total,43.65%
-📘 Gruppe 1 – Min/Max,
-Kürzester Text (Wörter),34
-Längster Text (Wörter),170
-Min Referenzen,1
-Max Referenzen,5
-Min Ref-Wörter,9
-Max Ref-Wörter,75
-🗂️ Gruppe 1 – Kategorie 0 (Wörter 0–9),0
-🗂️ Gruppe 1 – Kategorie 1 (Wörter 10–19),0
-🗂️ Gruppe 1 – Kategorie 2 (Wörter 20–29),0
-🗂️ Gruppe 1 – Kategorie 3 (Wörter 30–39),5
-🗂️ Gruppe 1 – Kategorie 4 (Wörter 40–49),3
-🗂️ Gruppe 1 – Kategorie 5 (Wörter 50–59),5
-🗂️ Gruppe 1 – Kategorie 6 (Wörter 60–69),10
-🗂️ Gruppe 1 – Kategorie 7 (Wörter 70–79),6
-🗂️ Gruppe 1 – Kategorie 8 (Wörter 80–89),5
-🗂️ Gruppe 1 – Kategorie 9 (Wörter 90–99),1
-🗂️ Gruppe 1 – Kategorie 10 (Wörter ≥100),5
+📘 Group 1 – Min/Max,
+Shortest text (words),34
+Longest text (words),170
+Min References,1
+Max References,5
+Min Ref Words,9
+Max Ref Words,75
+🗂️ Group 1 – Category 0 (Words 0–9),0
+🗂️ Group 1 – Category 1 (Words 10–19),0
+🗂️ Group 1 – Category 2 (Words 20–29),0
+🗂️ Group 1 – Category 3 (Words 30–39),5
+🗂️ Group 1 – Category 4 (Words 40–49),3
+🗂️ Group 1 – Category 5 (Words 50–59),5
+🗂️ Group 1 – Category 6 (Words 60–69),10
+🗂️ Group 1 – Category 7 (Words 70–79),6
+🗂️ Group 1 – Category 8 (Words 80–89),5
+🗂️ Group 1 – Category 9 (Words 90–99),1
+🗂️ Group 1 – Category 10 (Words ≥100),5
 ,
-📘 Gruppe 2 – Gesamtsummen,
-Anzahl Textsegmente,40
-Zeichen gesamt,15090
-Wörter gesamt,2609
-Referenzen gesamt,125
-Referenz-Wörter gesamt,2396
-Nicht-Referenz-Wörter,213
-📘 Gruppe 2 – Durchschnittswerte,
-Ø Zeichen,377.25
-Ø Wörter,65.22
-Ø Referenzen,3.12
-Ø Ref-Wörter,59.9
-Ø NonRef-Wörter,5.32
+📘 Group 2 – Totals,
+Number of text segments,40
+Total characters,15090
+Total words,2609
+Total references,125
+Total reference words,2396
+Non-reference words,213
+📘 Group 2 – Average values,
+Ø Characters,377.25
+Ø Words,65.22
+Ø References,3.12
+Ø Ref words,59.9
+Ø NonRef words,5.32
 Ø Ref/Total,93.50%
 Ø NonRef/Total,6.50%
-📘 Gruppe 2 – Min/Max,
-Kürzester Text (Wörter),21
-Längster Text (Wörter),126
-Min Referenzen,1
-Max Referenzen,7
-Min Ref-Wörter,16
-Max Ref-Wörter,114
-🗂️ Gruppe 2 – Kategorie 0 (Wörter 0–9),0
-🗂️ Gruppe 2 – Kategorie 1 (Wörter 10–19),0
-🗂️ Gruppe 2 – Kategorie 2 (Wörter 20–29),4
-🗂️ Gruppe 2 – Kategorie 3 (Wörter 30–39),5
-🗂️ Gruppe 2 – Kategorie 4 (Wörter 40–49),3
-🗂️ Gruppe 2 – Kategorie 5 (Wörter 50–59),8
-🗂️ Gruppe 2 – Kategorie 6 (Wörter 60–69),4
-🗂️ Gruppe 2 – Kategorie 7 (Wörter 70–79),6
-🗂️ Gruppe 2 – Kategorie 8 (Wörter 80–89),3
-🗂️ Gruppe 2 – Kategorie 9 (Wörter 90–99),0
-🗂️ Gruppe 2 – Kategorie 10 (Wörter ≥100),7
+📘 Group 2 – Min/Max,
+Shortest text (words),21
+Longest text (words),126
+Min References,1
+Max References,7
+Min Ref Words,16
+Max Ref Words,114
+🗂️ Group 2 – Category 0 (Words 0–9),0
+🗂️ Group 2 – Category 1 (Words 10–19),0
+🗂️ Group 2 – Category 2 (Words 20–29),4
+🗂️ Group 2 – Category 3 (Words 30–39),5
+🗂️ Group 2 – Category 4 (Words 40–49),3
+🗂️ Group 2 – Category 5 (Words 50–59),8
+🗂️ Group 2 – Category 6 (Words 60–69),4
+🗂️ Group 2 – Category 7 (Words 70–79),6
+🗂️ Group 2 – Category 8 (Words 80–89),3
+🗂️ Group 2 – Category 9 (Words 90–99),0
+🗂️ Group 2 – Category 10 (Words ≥100),7
 ,
-📘 Gruppe 3 – Gesamtsummen,
-Anzahl Textsegmente,40
-Zeichen gesamt,12765
-Wörter gesamt,1951
-Referenzen gesamt,40
-Referenz-Wörter gesamt,0
-Nicht-Referenz-Wörter,1951
-📘 Gruppe 3 – Durchschnittswerte,
-Ø Zeichen,319.12
-Ø Wörter,48.78
-Ø Referenzen,1.0
-Ø Ref-Wörter,0.0
-Ø NonRef-Wörter,48.78
+📘 Group 3 – Totals,
+Number of text segments,40
+Total characters,12765
+Total words,1951
+Total references,40
+Total reference words,0
+Non-reference words,1951
+📘 Group 3 – Average values,
+Ø Characters,319.12
+Ø Words,48.78
+Ø References,1.0
+Ø Ref words,0.0
+Ø NonRef words,48.78
 Ø Ref/Total,0.00%
 Ø NonRef/Total,100.00%
-📘 Gruppe 3 – Min/Max,
-Kürzester Text (Wörter),12
-Längster Text (Wörter),120
-Min Referenzen,1
-Max Referenzen,1
-Min Ref-Wörter,0
-Max Ref-Wörter,0
-🗂️ Gruppe 3 – Kategorie 0 (Wörter 0–9),0
-🗂️ Gruppe 3 – Kategorie 1 (Wörter 10–19),2
-🗂️ Gruppe 3 – Kategorie 2 (Wörter 20–29),6
-🗂️ Gruppe 3 – Kategorie 3 (Wörter 30–39),8
-🗂️ Gruppe 3 – Kategorie 4 (Wörter 40–49),8
-🗂️ Gruppe 3 – Kategorie 5 (Wörter 50–59),7
-🗂️ Gruppe 3 – Kategorie 6 (Wörter 60–69),3
-🗂️ Gruppe 3 – Kategorie 7 (Wörter 70–79),2
-🗂️ Gruppe 3 – Kategorie 8 (Wörter 80–89),2
-🗂️ Gruppe 3 – Kategorie 9 (Wörter 90–99),0
-🗂️ Gruppe 3 – Kategorie 10 (Wörter ≥100),2
+📘 Group 3 – Min/Max,
+Shortest text (words),12
+Longest text (words),120
+Min References,1
+Max References,1
+Min Ref Words,0
+Max Ref Words,0
+🗂️ Group 3 – Category 0 (Words 0–9),0
+🗂️ Group 3 – Category 1 (Words 10–19),2
+🗂️ Group 3 – Category 2 (Words 20–29),6
+🗂️ Group 3 – Category 3 (Words 30–39),8
+🗂️ Group 3 – Category 4 (Words 40–49),8
+🗂️ Group 3 – Category 5 (Words 50–59),7
+🗂️ Group 3 – Category 6 (Words 60–69),3
+🗂️ Group 3 – Category 7 (Words 70–79),2
+🗂️ Group 3 – Category 8 (Words 80–89),2
+🗂️ Group 3 – Category 9 (Words 90–99),0
+🗂️ Group 3 – Category 10 (Words ≥100),2

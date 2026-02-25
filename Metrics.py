@@ -2,24 +2,24 @@ import evaluate
 import pandas as pd
 from typing import List, Dict
 
-# Lade die Metriken
+# Load the metrics
 bleu = evaluate.load("bleu")
 rouge = evaluate.load("rouge")
 
-# Berechnung des BLEU-Scores
+# Calculation of the BLEU score
 def calculate_bleu(reference_text, prediction_text):
     """
-    Berechnet den BLEU-Score für eine gegebene Referenztext und eine Vorhersage.
-    :return: BLEU-Score-Ergebnis als Dictionary
+    Calculates the BLEU score for a given reference text and prediction.
+    :return: BLEU score result as a dictionary
     """
     results = bleu.compute(predictions=prediction_text, references=reference_text)
     return results
 
-# Berechnung des ROUGE-Scores
+# Calculation of the ROUGE score
 def calculate_rouge(reference_text, prediction_text):
     """
-    Berechnet den ROUGE-Score für eine gegebene Referenztext und eine Vorhersage.
-    :return: ROUGE-Score-Ergebnis als Dictionary
+    Calculates the ROUGE score for a given reference text and a prediction.
+    :return: ROUGE score result as a dictionary
     """
     results = rouge.compute(predictions=prediction_text, references=reference_text)
     return results
