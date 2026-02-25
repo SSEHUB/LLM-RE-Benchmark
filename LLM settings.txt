@@ -1,1 +1,43 @@
+LLM Settings
+
+This file contains the settings for the evaluated LLMs used.
+List of evaluated LLMs: qwen2.5:7b, qwen2.5:14b, qwen2.5:32b, qwen3:8b, qwen3:14b, qwen3:32b, gpt-oss:20b, gpt-oss:120b, gpt-4, gpt-5
+
+--- Executed via Ollama ---
+
+qwen2.5:7b: 
+
+qwen2.5:14b:
+
+qwen2.5:32b:
+
+qwen3:8b:
+
+qwen3:14b:
+
+qwen3:32b:
+
+gpt-oss:20b:
+
+gpt-oss:120b:
+
+
+--- Executed via OpenAI-API ---
+
+gpt-4:
+
+gpt-5:
+
+
+
+
+
+
+
+
+
+
+
+
+
 
