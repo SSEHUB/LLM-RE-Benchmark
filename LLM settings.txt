@@ -10,21 +10,58 @@ Ollama Version:
 --- Executed via Ollama ---
 
 qwen2.5:7b: 
+    "temperature": 0.8
 
 qwen2.5:14b:
+    "temperature": 0.8
 
 qwen2.5:32b:
+    "temperature": 0.8
 
 qwen3:8b:
+    {
+        "repeat_penalty": 1,
+        "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+        ],
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.95
+    }
 
 qwen3:14b:
+    {
+        "repeat_penalty": 1,
+        "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+        ],
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.95
+    }
 
 qwen3:32b:
+    {
+        "repeat_penalty": 1,
+        "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+        ],
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.95
+    }
+
 
 gpt-oss:20b:
 
-gpt-oss:120b:
+    { "temperature": 1 } 
 
+gpt-oss:120b:
+  
+    { "temperature": 1 } 
 
 --- Executed via OpenAI-API ---
 
