@@ -68,9 +68,12 @@ gpt-oss:120b:
 --- Executed via OpenAI-API ---
 
 gpt-4:
+        model='gpt-4-0613'
+        default
 
 gpt-5:
-
+        model='gpt-5-2025-08-07'
+        default
 
 
 
