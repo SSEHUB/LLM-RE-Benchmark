@@ -6,7 +6,7 @@ List of evaluated LLMs: qwen2.5:7b, qwen2.5:14b, qwen2.5:32b, qwen3:8b, qwen3:14
 
 
 
---- Executed via Ollama ---
+--- Executed via Ollama (Version: 0.15.6) ---
 
 qwen2.5:7b: 
     default
