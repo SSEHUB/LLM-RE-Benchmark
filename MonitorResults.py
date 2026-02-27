@@ -861,7 +861,7 @@ def plot_boxplot_precision_recall_f1_per_model():
     plt.savefig("boxplot_precision_recall_f1_per_model.pdf")
     #plt.show()
 
-    print("\n✅ Box plot chart saved under: boxplot_precision_recall_f1_per_model.*")
+    print("\n✅ Box plot chart saved under: boxplot_precision_recall_f1_per_model.png")
 
 
 def plot_benchmark_bar_chart_precision_recall_f1score_by_reasoning_category_from_runs():
@@ -1066,8 +1066,8 @@ def main():
     json_file = "BenchmarkRequirements.json"
 
     #results_per_textsegment_of_all_runs = load_results_dict_from_csv(csv_file)
-    #results_per_textsegment_of_all_runs = load_csv_and_renumber_run_ids(csv_file, 120)
-    results_per_textsegment_of_all_runs = load_csv_and_renumber_run_ids("results_per_textsegment_analysis_threshold.csv", 60)
+    results_per_textsegment_of_all_runs = load_csv_and_renumber_run_ids(csv_file, 120)
+    #results_per_textsegment_of_all_runs = load_csv_and_renumber_run_ids("results_per_textsegment_analysis_threshold.csv", 60)
 
     analysis_data(results_per_textsegment_of_all_runs, json_file)
 

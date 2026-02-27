@@ -344,10 +344,10 @@ def main():
     """
     run_multiple_evaluations(
         json_file="BenchmarkRequirements.json", 
-        thresholds=[1.0, 0.95, 0.9, 0.85, 0.8, 0.75], 
+        thresholds=[0.9], 
         #models=["qwen2.5:7b", "qwen2.5:14b", "qwen2.5:32b", "qwen3:8b", "qwen3:14b", "qwen3:32b", "gpt-oss:20b", "gpt-oss:120b", "gpt-4", "gpt-5"],
         models=["gpt-5"],
-        runs_per_model=3
+        runs_per_model=5
     )
     
 
