@@ -23,7 +23,6 @@ def run_gpt_openai(prompt: str, gptmodel: str) -> str:
                 }
             ]
         )
-        print(response)
         return response.choices[0].message.content.strip()
     except Exception as e:
         print(f"Error querying OpenAI GPT model: {e}")
